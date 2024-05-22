@@ -1,11 +1,21 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 #include <string>
+#include <vector>
 #include "utils.h"
 using namespace std;
 
+vector<string> convertText(string text){
+    vector<string> data;
+    for (int i = 0; i < text.length(); i++) {
 
-
+        if (int(text[i]) > 0 && int(text[i]) <256){
+            data.push_back(addZeros(toBinary(int(text[i]))));
+        }
+        
+    }
+    return data;
+}
 int PM1(string path, string text){
     return 0;
 }
@@ -43,15 +53,14 @@ int main() {
             image.at<cv::Vec3b>(y, x) = pixel;
         }
     }
-    string s = "abcdefghijklmnopqrstuvwxyz .";
-    for (int i = 0; i<s.length(); i++) {
-        cout << int(s[i]) << s[i] << endl;
-    }
-    cout << toBinary(6);
     // Сохраняем измененное изображение
     cv::imwrite("new_image.png", image);
 
     cout << "Измененное изображение сохранено как new_image.png" << endl;
 
+    vector<string> data = convertText("abcdef my name сергей");
+    for (int i = 0; i<data.size(); i++) {
+        cout << data[i] << endl;
+    }
     return 0;
 }

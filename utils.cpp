@@ -1,6 +1,13 @@
 #include <string>
 using namespace std;
 
+string addZeros(string s) {
+    if (s.length()<8) {
+        s.insert(0, 8-s.length(), '0');
+    }
+    return s;
+}
+
 string toBinary(int decimal) {
     string binary = ""; 
 
