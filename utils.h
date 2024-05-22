@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
-std::vector<std::string> convertText(std::string text);
-
+std::vector<char> convertText(std::string text);
+std::string toBinary(int decimal);
+int binaryToDecimal(const std::string& binary);
 #endif

@@ -5,51 +5,46 @@
 #include "utils.h"
 using namespace std;
 
-int PM1(string path, string text){
+int PM1(string path, string text) {
+    vector<char> binaryText = convertText(text);
+    cv::Mat image = cv::imread(path);
+    if(image.empty()) {
+        cout << "Невозможно загрузить изображение. Проверьте путь к файлу." << endl;
+        return -1;
+    }
+    // Получаем размеры изображения
+    int rows = image.rows;
+    int cols = image.cols;
+    int rounds = 0;
+    for (int y = 0; y < rows; ++y) {
+        for (int x = 0; x < cols; ++x) {
+            char bit = binaryText[rounds];
+            // Получаем текущий пиксель
+            cv::Vec3b pixel = image.at<cv::Vec3b>(y, x);
+            // cout << << endl;
+            // Изменяем пиксель (например, инвертируем цвета)
+            // binaryToDecimal
+
+            string binaryPixel = toBinary(static_cast<int>(pixel[0]));
+            binaryPixel[-1] = bit;
+            pixel[0] = binaryToDecimal(binaryPixel); // Синий
+
+            // Сохраняем изменения в изображении
+            image.at<cv::Vec3b>(y, x) = pixel;
+            rounds +=1;
+        }
+    }
+    // Сохраняем измененное изображение
+    cv::imwrite("new_image.png", image);
     return 0;
 }
 
 
 int main() {
-    // Загружаем изображение
-    cv::Mat image = cv::imread("steg1.png");
-
-    // Проверяем, удалось ли загрузить изображение
-    if(image.empty()) {
-        cout << "Невозможно загрузить изображение. Проверьте путь к файлу." << endl;
-        return -1;
-    }
-
-    // Получаем размеры изображения
-    int rows = image.rows;
-    int cols = image.cols;
-
-    // Выводим информацию о размерах изображения
-    cout << "Размеры изображения: " << rows << "x" << cols << endl;
-
-    // Проходим по всем пикселям изображения
-    for (int y = 0; y < rows; ++y) {
-        for (int x = 0; x < cols; ++x) {
-            // Получаем текущий пиксель
-            cv::Vec3b pixel = image.at<cv::Vec3b>(y, x);
-
-            // Изменяем пиксель (например, инвертируем цвета)
-            pixel[0] = 255 - pixel[0]; // Синий
-            pixel[1] = 255 - pixel[1]; // Зеленый
-            pixel[2] = 255 - pixel[2]; // Красный
-
-            // Сохраняем изменения в изображении
-            image.at<cv::Vec3b>(y, x) = pixel;
-        }
-    }
-    // Сохраняем измененное изображение
-    cv::imwrite("new_image.png", image);
-
-    cout << "Измененное изображение сохранено как new_image.png" << endl;
-
-    vector<string> data = convertText("abcdef my name сергей");
-    for (int i = 0; i<data.size(); i++) {
-        cout << data[i] << endl;
-    }
+    PM1("steg1.png", "my text");
+    // vector<string> data = convertText("abcdef my name сергей");
+    // for (int i = 0; i<data.size(); i++) {
+    //     cout << data[i] << endl;
+    // }
     return 0;
 }

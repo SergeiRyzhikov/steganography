@@ -19,14 +19,34 @@ string toBinary(int decimal) {
     }
     return binary;
 }
-vector<string> convertText(string text){
-    vector<string> data;
-    for (int i = 0; i < text.length(); i++) {
+
+vector<char> convertText(string text){
+    vector<char> data;
+    for (int i = 0; i < text.length(); ++i) {
 
         if (int(text[i]) > 0 && int(text[i]) <256){
-            data.push_back(addZeros(toBinary(int(text[i]))));
+            string binary = addZeros(toBinary(int(text[i])));
+            for (int j = 0; j < binary.length(); ++j) {
+                data.push_back(binary[j]);
+            }
         }
-        
     }
     return data;
+}
+
+int binaryToDecimal(const std::string& binary) {
+    int decimal = 0;
+    int power = 1; // Степень двойки, которая будет умножаться на каждый бит
+
+    // Проходим по строке двоичного числа справа налево
+    for (int i = binary.size() - 1; i >= 0; --i) {
+        // Если текущий символ '1', то прибавляем к десятичному числу значение степени двойки
+        if (binary[i] == '1') {
+            decimal += power;
+        }
+        // Увеличиваем степень двойки
+        power *= 2;
+    }
+
+    return decimal;
 }
