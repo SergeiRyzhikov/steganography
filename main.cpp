@@ -1,8 +1,9 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 #include <string>
-
+#include "utils.h"
 using namespace std;
+
 
 
 int PM1(string path, string text){
@@ -16,7 +17,7 @@ int main() {
 
     // Проверяем, удалось ли загрузить изображение
     if(image.empty()) {
-        cout << "Невозможно загрузить изображение. Проверьте путь к файлу." << std::endl;
+        cout << "Невозможно загрузить изображение. Проверьте путь к файлу." << endl;
         return -1;
     }
 
@@ -42,11 +43,15 @@ int main() {
             image.at<cv::Vec3b>(y, x) = pixel;
         }
     }
-
+    string s = "abcdefghijklmnopqrstuvwxyz .";
+    for (int i = 0; i<s.length(); i++) {
+        cout << int(s[i]) << s[i] << endl;
+    }
+    cout << toBinary(6);
     // Сохраняем измененное изображение
     cv::imwrite("new_image.png", image);
 
     cout << "Измененное изображение сохранено как new_image.png" << endl;
-    
+
     return 0;
 }

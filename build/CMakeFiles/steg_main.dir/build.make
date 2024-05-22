@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ryzhikov/source/proect_steg
+CMAKE_SOURCE_DIR = /home/ryzhikov/source/project_steg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ryzhikov/source/proect_steg/build
+CMAKE_BINARY_DIR = /home/ryzhikov/source/project_steg/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/steg_main.dir/depend.make
@@ -72,25 +72,41 @@ include CMakeFiles/steg_main.dir/flags.make
 CMakeFiles/steg_main.dir/main.cpp.o: CMakeFiles/steg_main.dir/flags.make
 CMakeFiles/steg_main.dir/main.cpp.o: ../main.cpp
 CMakeFiles/steg_main.dir/main.cpp.o: CMakeFiles/steg_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryzhikov/source/proect_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/steg_main.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/steg_main.dir/main.cpp.o -MF CMakeFiles/steg_main.dir/main.cpp.o.d -o CMakeFiles/steg_main.dir/main.cpp.o -c /home/ryzhikov/source/proect_steg/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/steg_main.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/steg_main.dir/main.cpp.o -MF CMakeFiles/steg_main.dir/main.cpp.o.d -o CMakeFiles/steg_main.dir/main.cpp.o -c /home/ryzhikov/source/project_steg/main.cpp
 
 CMakeFiles/steg_main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/steg_main.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryzhikov/source/proect_steg/main.cpp > CMakeFiles/steg_main.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryzhikov/source/project_steg/main.cpp > CMakeFiles/steg_main.dir/main.cpp.i
 
 CMakeFiles/steg_main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/steg_main.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryzhikov/source/proect_steg/main.cpp -o CMakeFiles/steg_main.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryzhikov/source/project_steg/main.cpp -o CMakeFiles/steg_main.dir/main.cpp.s
+
+CMakeFiles/steg_main.dir/utils.cpp.o: CMakeFiles/steg_main.dir/flags.make
+CMakeFiles/steg_main.dir/utils.cpp.o: ../utils.cpp
+CMakeFiles/steg_main.dir/utils.cpp.o: CMakeFiles/steg_main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/steg_main.dir/utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/steg_main.dir/utils.cpp.o -MF CMakeFiles/steg_main.dir/utils.cpp.o.d -o CMakeFiles/steg_main.dir/utils.cpp.o -c /home/ryzhikov/source/project_steg/utils.cpp
+
+CMakeFiles/steg_main.dir/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/steg_main.dir/utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryzhikov/source/project_steg/utils.cpp > CMakeFiles/steg_main.dir/utils.cpp.i
+
+CMakeFiles/steg_main.dir/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/steg_main.dir/utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryzhikov/source/project_steg/utils.cpp -o CMakeFiles/steg_main.dir/utils.cpp.s
 
 # Object files for target steg_main
 steg_main_OBJECTS = \
-"CMakeFiles/steg_main.dir/main.cpp.o"
+"CMakeFiles/steg_main.dir/main.cpp.o" \
+"CMakeFiles/steg_main.dir/utils.cpp.o"
 
 # External object files for target steg_main
 steg_main_EXTERNAL_OBJECTS =
 
 steg_main: CMakeFiles/steg_main.dir/main.cpp.o
+steg_main: CMakeFiles/steg_main.dir/utils.cpp.o
 steg_main: CMakeFiles/steg_main.dir/build.make
 steg_main: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 steg_main: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
@@ -147,7 +163,7 @@ steg_main: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
 steg_main: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 steg_main: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 steg_main: CMakeFiles/steg_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ryzhikov/source/proect_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable steg_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable steg_main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/steg_main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -159,6 +175,6 @@ CMakeFiles/steg_main.dir/clean:
 .PHONY : CMakeFiles/steg_main.dir/clean
 
 CMakeFiles/steg_main.dir/depend:
-	cd /home/ryzhikov/source/proect_steg/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ryzhikov/source/proect_steg /home/ryzhikov/source/proect_steg /home/ryzhikov/source/proect_steg/build /home/ryzhikov/source/proect_steg/build /home/ryzhikov/source/proect_steg/build/CMakeFiles/steg_main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ryzhikov/source/project_steg/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ryzhikov/source/project_steg /home/ryzhikov/source/project_steg /home/ryzhikov/source/project_steg/build /home/ryzhikov/source/project_steg/build /home/ryzhikov/source/project_steg/build/CMakeFiles/steg_main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/steg_main.dir/depend
 

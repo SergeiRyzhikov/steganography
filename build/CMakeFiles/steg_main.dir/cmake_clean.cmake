@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/steg_main.dir/main.cpp.o"
   "CMakeFiles/steg_main.dir/main.cpp.o.d"
+  "CMakeFiles/steg_main.dir/utils.cpp.o"
+  "CMakeFiles/steg_main.dir/utils.cpp.o.d"
   "steg_main"
   "steg_main.pdb"
 )
