@@ -2,9 +2,7 @@
 #define UTILS_H
 
 #include <string>
-
-std::string addZeros(std::string s);
-
-std::string toBinary(int decimal);
+#include <vector>
+std::vector<std::string> convertText(std::string text);
 
 #endif

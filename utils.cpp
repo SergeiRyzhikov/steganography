@@ -1,4 +1,5 @@
 #include <string>
+#include <vector>
 using namespace std;
 
 string addZeros(string s) {
@@ -17,4 +18,15 @@ string toBinary(int decimal) {
         decimal /= 2;
     }
     return binary;
+}
+vector<string> convertText(string text){
+    vector<string> data;
+    for (int i = 0; i < text.length(); i++) {
+
+        if (int(text[i]) > 0 && int(text[i]) <256){
+            data.push_back(addZeros(toBinary(int(text[i]))));
+        }
+        
+    }
+    return data;
 }

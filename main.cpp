@@ -5,17 +5,6 @@
 #include "utils.h"
 using namespace std;
 
-vector<string> convertText(string text){
-    vector<string> data;
-    for (int i = 0; i < text.length(); i++) {
-
-        if (int(text[i]) > 0 && int(text[i]) <256){
-            data.push_back(addZeros(toBinary(int(text[i]))));
-        }
-        
-    }
-    return data;
-}
 int PM1(string path, string text){
     return 0;
 }
