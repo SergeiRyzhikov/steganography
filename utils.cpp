@@ -20,14 +20,14 @@ string toBinary(int decimal) {
     return binary;
 }
 
-vector<char> convertText(string text){
-    vector<char> data;
+string convertText(string text){
+    string data;
     for (int i = 0; i < text.length(); ++i) {
 
         if (int(text[i]) > 0 && int(text[i]) <256){
             string binary = addZeros(toBinary(int(text[i])));
             for (int j = 0; j < binary.length(); ++j) {
-                data.push_back(binary[j]);
+                data += binary[j];
             }
         }
     }
@@ -49,4 +49,16 @@ int binaryToDecimal(const std::string& binary) {
     }
 
     return decimal;
+}
+
+string convertExtractText(string extractedText){
+    string text;
+    for (int i = 0; i<extractedText.length(); i+=8){
+        int code = binaryToDecimal(extractedText.substr(i, 8));
+
+        if (code >31 && code < 127){
+            text += char(code);
+        }
+    }
+    return text;
 }
