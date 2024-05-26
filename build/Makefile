@@ -129,6 +129,30 @@ steg_main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/build
 .PHONY : steg_main/fast
 
+PM1.o: PM1.cpp.o
+.PHONY : PM1.o
+
+# target to build an object file
+PM1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/PM1.cpp.o
+.PHONY : PM1.cpp.o
+
+PM1.i: PM1.cpp.i
+.PHONY : PM1.i
+
+# target to preprocess a source file
+PM1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/PM1.cpp.i
+.PHONY : PM1.cpp.i
+
+PM1.s: PM1.cpp.s
+.PHONY : PM1.s
+
+# target to generate assembly for a file
+PM1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/PM1.cpp.s
+.PHONY : PM1.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... steg_main"
+	@echo "... PM1.o"
+	@echo "... PM1.i"
+	@echo "... PM1.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
