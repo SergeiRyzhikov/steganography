@@ -177,6 +177,30 @@ PM1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/PM1.cpp.s
 .PHONY : PM1.cpp.s
 
+QIM.o: QIM.cpp.o
+.PHONY : QIM.o
+
+# target to build an object file
+QIM.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/QIM.cpp.o
+.PHONY : QIM.cpp.o
+
+QIM.i: QIM.cpp.i
+.PHONY : QIM.i
+
+# target to preprocess a source file
+QIM.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/QIM.cpp.i
+.PHONY : QIM.cpp.i
+
+QIM.s: QIM.cpp.s
+.PHONY : QIM.s
+
+# target to generate assembly for a file
+QIM.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/QIM.cpp.s
+.PHONY : QIM.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -240,6 +264,9 @@ help:
 	@echo "... PM1.o"
 	@echo "... PM1.i"
 	@echo "... PM1.s"
+	@echo "... QIM.o"
+	@echo "... QIM.i"
+	@echo "... QIM.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
