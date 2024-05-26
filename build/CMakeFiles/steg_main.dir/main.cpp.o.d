@@ -347,4 +347,5 @@ CMakeFiles/steg_main.dir/main.cpp.o: \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
  /home/ryzhikov/source/project_steg/utils.h \
- /home/ryzhikov/source/project_steg/LSB.h
+ /home/ryzhikov/source/project_steg/LSB.h \
+ /home/ryzhikov/source/project_steg/PM1.h

@@ -3,5 +3,5 @@ project(steg_main)
 
 find_package(OpenCV REQUIRED)
 
-add_executable(steg_main main.cpp utils.cpp LSB.cpp)
+add_executable(steg_main main.cpp utils.cpp LSB.cpp PM1.cpp)
 target_link_libraries(steg_main ${OpenCV_LIBS})

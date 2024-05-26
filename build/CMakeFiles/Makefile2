@@ -81,12 +81,12 @@ clean: CMakeFiles/steg_main.dir/clean
 CMakeFiles/steg_main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=1,2,3,4 "Built target steg_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target steg_main"
 .PHONY : CMakeFiles/steg_main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/steg_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryzhikov/source/project_steg/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryzhikov/source/project_steg/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/steg_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryzhikov/source/project_steg/build/CMakeFiles 0
 .PHONY : CMakeFiles/steg_main.dir/rule
