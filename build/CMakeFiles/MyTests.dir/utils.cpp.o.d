@@ -1,4 +1,4 @@
-CMakeFiles/steg_main.dir/utils.cpp.o: \
+CMakeFiles/MyTests.dir/utils.cpp.o: \
  /home/ryzhikov/source/project_steg/utils.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

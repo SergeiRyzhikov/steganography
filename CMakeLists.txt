@@ -10,7 +10,8 @@ target_link_libraries(steg_main ${OpenCV_LIBS})
 include_directories(doctest)
 
 # Добавьте тестовый исполняемый файл
-add_executable(MyTests test.cpp)
+add_executable(MyTests test.cpp utils.cpp LSB.cpp PM1.cpp QIM.cpp)
+target_link_libraries(MyTests ${OpenCV_LIBS})
 
 # Ссылка на библиотеку doctest
 target_include_directories(MyTests PRIVATE doctest)

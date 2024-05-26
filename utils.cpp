@@ -2,10 +2,12 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
+#include <stdexcept>
+
 using namespace std;
 
 int randomBinary() {
-    return rand() % 2; // возвращаем 0 или 1
+    return rand() % 2; 
 }
 
 
@@ -17,13 +19,16 @@ string addZeros(string s) {
 }
 
 string toBinary(int decimal) {
-    string binary = ""; 
+    if (decimal == 0) return "0";
+    if (decimal < 0) throw invalid_argument("Negative numbers are not supported");
 
+    string binary = "";
     while (decimal > 0) {
         int remainder = decimal % 2;
         binary = to_string(remainder) + binary;
         decimal /= 2;
     }
+
     return binary;
 }
 
@@ -36,6 +41,9 @@ string convertText(string text){
             for (int j = 0; j < binary.length(); ++j) {
                 data += binary[j];
             }
+        }
+        else {
+            throw invalid_argument("Such symbols are not supported");
         }
     }
     return data;
@@ -50,6 +58,9 @@ int binaryToDecimal(const std::string& binary) {
         // Если текущий символ '1', то прибавляем к десятичному числу значение степени двойки
         if (binary[i] == '1') {
             decimal += power;
+        }
+        if (binary[i] != '0' && binary[i] != '1' ){
+            throw invalid_argument("Binary number must have only 0 or 1 in writing");
         }
         // Увеличиваем степень двойки
         power *= 2;

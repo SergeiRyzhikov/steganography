@@ -256,4 +256,8 @@ CMakeFiles/MyTests.dir/test.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
  /usr/include/c++/11/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
- /usr/include/x86_64-linux-gnu/sys/time.h
+ /usr/include/x86_64-linux-gnu/sys/time.h \
+ /home/ryzhikov/source/project_steg/utils.h \
+ /home/ryzhikov/source/project_steg/LSB.h \
+ /home/ryzhikov/source/project_steg/PM1.h \
+ /home/ryzhikov/source/project_steg/QIM.h

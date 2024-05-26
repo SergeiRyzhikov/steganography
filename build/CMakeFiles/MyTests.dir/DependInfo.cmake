@@ -8,7 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ryzhikov/source/project_steg/LSB.cpp" "CMakeFiles/MyTests.dir/LSB.cpp.o" "gcc" "CMakeFiles/MyTests.dir/LSB.cpp.o.d"
+  "/home/ryzhikov/source/project_steg/PM1.cpp" "CMakeFiles/MyTests.dir/PM1.cpp.o" "gcc" "CMakeFiles/MyTests.dir/PM1.cpp.o.d"
+  "/home/ryzhikov/source/project_steg/QIM.cpp" "CMakeFiles/MyTests.dir/QIM.cpp.o" "gcc" "CMakeFiles/MyTests.dir/QIM.cpp.o.d"
   "/home/ryzhikov/source/project_steg/test.cpp" "CMakeFiles/MyTests.dir/test.cpp.o" "gcc" "CMakeFiles/MyTests.dir/test.cpp.o.d"
+  "/home/ryzhikov/source/project_steg/utils.cpp" "CMakeFiles/MyTests.dir/utils.cpp.o" "gcc" "CMakeFiles/MyTests.dir/utils.cpp.o.d"
   )
 
 # Targets to which this target links.

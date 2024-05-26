@@ -83,17 +83,135 @@ CMakeFiles/MyTests.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyTests.dir/test.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryzhikov/source/project_steg/test.cpp -o CMakeFiles/MyTests.dir/test.cpp.s
 
+CMakeFiles/MyTests.dir/utils.cpp.o: CMakeFiles/MyTests.dir/flags.make
+CMakeFiles/MyTests.dir/utils.cpp.o: ../utils.cpp
+CMakeFiles/MyTests.dir/utils.cpp.o: CMakeFiles/MyTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyTests.dir/utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/utils.cpp.o -MF CMakeFiles/MyTests.dir/utils.cpp.o.d -o CMakeFiles/MyTests.dir/utils.cpp.o -c /home/ryzhikov/source/project_steg/utils.cpp
+
+CMakeFiles/MyTests.dir/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyTests.dir/utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryzhikov/source/project_steg/utils.cpp > CMakeFiles/MyTests.dir/utils.cpp.i
+
+CMakeFiles/MyTests.dir/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyTests.dir/utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryzhikov/source/project_steg/utils.cpp -o CMakeFiles/MyTests.dir/utils.cpp.s
+
+CMakeFiles/MyTests.dir/LSB.cpp.o: CMakeFiles/MyTests.dir/flags.make
+CMakeFiles/MyTests.dir/LSB.cpp.o: ../LSB.cpp
+CMakeFiles/MyTests.dir/LSB.cpp.o: CMakeFiles/MyTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyTests.dir/LSB.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/LSB.cpp.o -MF CMakeFiles/MyTests.dir/LSB.cpp.o.d -o CMakeFiles/MyTests.dir/LSB.cpp.o -c /home/ryzhikov/source/project_steg/LSB.cpp
+
+CMakeFiles/MyTests.dir/LSB.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyTests.dir/LSB.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryzhikov/source/project_steg/LSB.cpp > CMakeFiles/MyTests.dir/LSB.cpp.i
+
+CMakeFiles/MyTests.dir/LSB.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyTests.dir/LSB.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryzhikov/source/project_steg/LSB.cpp -o CMakeFiles/MyTests.dir/LSB.cpp.s
+
+CMakeFiles/MyTests.dir/PM1.cpp.o: CMakeFiles/MyTests.dir/flags.make
+CMakeFiles/MyTests.dir/PM1.cpp.o: ../PM1.cpp
+CMakeFiles/MyTests.dir/PM1.cpp.o: CMakeFiles/MyTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyTests.dir/PM1.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/PM1.cpp.o -MF CMakeFiles/MyTests.dir/PM1.cpp.o.d -o CMakeFiles/MyTests.dir/PM1.cpp.o -c /home/ryzhikov/source/project_steg/PM1.cpp
+
+CMakeFiles/MyTests.dir/PM1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyTests.dir/PM1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryzhikov/source/project_steg/PM1.cpp > CMakeFiles/MyTests.dir/PM1.cpp.i
+
+CMakeFiles/MyTests.dir/PM1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyTests.dir/PM1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryzhikov/source/project_steg/PM1.cpp -o CMakeFiles/MyTests.dir/PM1.cpp.s
+
+CMakeFiles/MyTests.dir/QIM.cpp.o: CMakeFiles/MyTests.dir/flags.make
+CMakeFiles/MyTests.dir/QIM.cpp.o: ../QIM.cpp
+CMakeFiles/MyTests.dir/QIM.cpp.o: CMakeFiles/MyTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyTests.dir/QIM.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyTests.dir/QIM.cpp.o -MF CMakeFiles/MyTests.dir/QIM.cpp.o.d -o CMakeFiles/MyTests.dir/QIM.cpp.o -c /home/ryzhikov/source/project_steg/QIM.cpp
+
+CMakeFiles/MyTests.dir/QIM.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyTests.dir/QIM.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryzhikov/source/project_steg/QIM.cpp > CMakeFiles/MyTests.dir/QIM.cpp.i
+
+CMakeFiles/MyTests.dir/QIM.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyTests.dir/QIM.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryzhikov/source/project_steg/QIM.cpp -o CMakeFiles/MyTests.dir/QIM.cpp.s
+
 # Object files for target MyTests
 MyTests_OBJECTS = \
-"CMakeFiles/MyTests.dir/test.cpp.o"
+"CMakeFiles/MyTests.dir/test.cpp.o" \
+"CMakeFiles/MyTests.dir/utils.cpp.o" \
+"CMakeFiles/MyTests.dir/LSB.cpp.o" \
+"CMakeFiles/MyTests.dir/PM1.cpp.o" \
+"CMakeFiles/MyTests.dir/QIM.cpp.o"
 
 # External object files for target MyTests
 MyTests_EXTERNAL_OBJECTS =
 
 MyTests: CMakeFiles/MyTests.dir/test.cpp.o
+MyTests: CMakeFiles/MyTests.dir/utils.cpp.o
+MyTests: CMakeFiles/MyTests.dir/LSB.cpp.o
+MyTests: CMakeFiles/MyTests.dir/PM1.cpp.o
+MyTests: CMakeFiles/MyTests.dir/QIM.cpp.o
 MyTests: CMakeFiles/MyTests.dir/build.make
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
+MyTests: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 MyTests: CMakeFiles/MyTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MyTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable MyTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

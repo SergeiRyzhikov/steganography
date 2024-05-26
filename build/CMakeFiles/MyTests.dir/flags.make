@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ryzhikov/source/project_steg/doctest
+CXX_INCLUDES = -I/home/ryzhikov/source/project_steg/doctest -isystem /usr/include/opencv4
 
 CXX_FLAGS = 
 

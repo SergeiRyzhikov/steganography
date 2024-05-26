@@ -148,6 +148,7 @@ LSB.o: LSB.cpp.o
 # target to build an object file
 LSB.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/LSB.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/LSB.cpp.o
 .PHONY : LSB.cpp.o
 
 LSB.i: LSB.cpp.i
@@ -156,6 +157,7 @@ LSB.i: LSB.cpp.i
 # target to preprocess a source file
 LSB.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/LSB.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/LSB.cpp.i
 .PHONY : LSB.cpp.i
 
 LSB.s: LSB.cpp.s
@@ -164,6 +166,7 @@ LSB.s: LSB.cpp.s
 # target to generate assembly for a file
 LSB.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/LSB.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/LSB.cpp.s
 .PHONY : LSB.cpp.s
 
 PM1.o: PM1.cpp.o
@@ -172,6 +175,7 @@ PM1.o: PM1.cpp.o
 # target to build an object file
 PM1.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/PM1.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/PM1.cpp.o
 .PHONY : PM1.cpp.o
 
 PM1.i: PM1.cpp.i
@@ -180,6 +184,7 @@ PM1.i: PM1.cpp.i
 # target to preprocess a source file
 PM1.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/PM1.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/PM1.cpp.i
 .PHONY : PM1.cpp.i
 
 PM1.s: PM1.cpp.s
@@ -188,6 +193,7 @@ PM1.s: PM1.cpp.s
 # target to generate assembly for a file
 PM1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/PM1.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/PM1.cpp.s
 .PHONY : PM1.cpp.s
 
 QIM.o: QIM.cpp.o
@@ -196,6 +202,7 @@ QIM.o: QIM.cpp.o
 # target to build an object file
 QIM.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/QIM.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/QIM.cpp.o
 .PHONY : QIM.cpp.o
 
 QIM.i: QIM.cpp.i
@@ -204,6 +211,7 @@ QIM.i: QIM.cpp.i
 # target to preprocess a source file
 QIM.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/QIM.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/QIM.cpp.i
 .PHONY : QIM.cpp.i
 
 QIM.s: QIM.cpp.s
@@ -212,6 +220,7 @@ QIM.s: QIM.cpp.s
 # target to generate assembly for a file
 QIM.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/QIM.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/QIM.cpp.s
 .PHONY : QIM.cpp.s
 
 main.o: main.cpp.o
@@ -268,6 +277,7 @@ utils.o: utils.cpp.o
 # target to build an object file
 utils.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/utils.cpp.o
 .PHONY : utils.cpp.o
 
 utils.i: utils.cpp.i
@@ -276,6 +286,7 @@ utils.i: utils.cpp.i
 # target to preprocess a source file
 utils.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -284,6 +295,7 @@ utils.s: utils.cpp.s
 # target to generate assembly for a file
 utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 # Help Target
