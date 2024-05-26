@@ -6,10 +6,10 @@
 
 using namespace std;
 
-int PM1_embed(string path, string text) {
+int PM1_embed(string imagePath, string text, string imageName) {
     string binaryText = convertText(text);
     
-    cv::Mat image = cv::imread(path);
+    cv::Mat image = cv::imread(imagePath);
 
     if(image.empty()) {
         cout << "Невозможно загрузить изображение. Проверьте путь к файлу." << endl;
@@ -46,7 +46,7 @@ int PM1_embed(string path, string text) {
         }
     }
     // Сохраняем измененное изображение
-    cv::imwrite("new_image.png", image);
+    cv::imwrite(imageName, image);
     return 0;
 }
 
