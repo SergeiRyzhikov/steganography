@@ -100,21 +100,53 @@ TEST_CASE("testing convertExtractText negative") {
     CHECK_THROWS_AS(convertExtractText("a1a1a1"), invalid_argument); 
 }
 
-TEST_CASE("testing PM1_embed negative") {
+TEST_CASE("testing PM1 positive") {
+    // корректные входные данные
+    REQUIRE(PM1_embed("steg1.png", "A", "test_output.png") == 0);
+    REQUIRE(PM1_extract("test_output.png") == 0);
+
+    // Проверка, что файл test_output.png был создан
+    ifstream f("test_output.png");
+    CHECK(f.good());
+    f.close();
+    
+    remove("test_output.png");
+}
+
+TEST_CASE("testing LSB positive") {
+    // корректные входные данные
+    REQUIRE(LSB_embed("steg1.png", "A", "test_output.png") == 0);
+    REQUIRE(LSB_extract("test_output.png") == 0);
+
+    // Проверка, что файл test_output.png был создан
+    ifstream f("test_output.png");
+    CHECK(f.good());
+    f.close();
+    remove("test_output.png");
+}
+
+TEST_CASE("testing QIM positive") {
+    // корректные входные данные
+    REQUIRE(QIM_embed("steg1.png", "A", "test_output.png") == 0);
+    REQUIRE(QIM_extract("test_output.png") == 0);
+    
+    // Проверка, что файл test_output.png был создан
+    ifstream f("test_output.png");
+    CHECK(f.good());
+    f.close();
+    remove("test_output.png");
+}
+
+TEST_CASE("testing PM1 negative") {
     REQUIRE(PM1_embed("pathDoesntExists", "text", "name")==-1); 
     REQUIRE(PM1_extract("pathDoesntExists")==-1); 
 }
 
-TEST_CASE("testing PM1_embed negative") {
-    REQUIRE(PM1_embed("pathDoesntExists", "text", "name")==-1); 
-    REQUIRE(PM1_extract("pathDoesntExists")==-1); 
-}
-
-TEST_CASE("testing LSB_embed negative") {
+TEST_CASE("testing LSB negative") {
     REQUIRE(LSB_embed("pathDoesntExists", "text", "name")==-1);
     REQUIRE(LSB_extract("pathDoesntExists")==-1);  
 }
-TEST_CASE("testing QIM_embed negative") {
+TEST_CASE("testing QIM negative") {
     REQUIRE(QIM_embed("pathDoesntExists", "text", "name")==-1); 
     REQUIRE(QIM_extract("pathDoesntExists")==-1); 
 }
