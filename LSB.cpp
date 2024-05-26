@@ -33,7 +33,7 @@ int LSB_extract(string path) {
     }
     string text = convertExtractText(extractedText);
 
-    cout << text <<endl;
+    cout << "Извелеченный текст: " << text <<endl;
     return 0;
 }
 
@@ -70,5 +70,6 @@ int LSB_embed(string imagePath, string text, string imageName) {
     }
     // Сохраняем измененное изображение
     cv::imwrite(imageName, image);
+    cout << "\nВставка текста произошла успешно. Стегоизображение: " << imageName <<endl;
     return 0;
 }
