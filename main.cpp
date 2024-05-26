@@ -7,19 +7,25 @@
 #include "LSB.h"
 #include "PM1.h"
 #include "QIM.h"
-
+#include <limits>
 using namespace std;
 
 
 int main() {
+    // PM1_embed("steg1.png", "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj", "new_image.png");
+    
+
     string method, choice, path, name, text;
     cout << "Выберите стегонаграфический метод (PM1, QIM, LSB): " << endl;
     cin >> method;
+    cout << "" << endl;
     cout << "Выберите встраивание или извлечение: " << endl;
     cin >> choice;
+    cout << "" << endl;
     if (choice == "извлечение"){
         cout << "Введите путь до изображения: " << endl;
         cin >> path;
+        cout << "" << endl;
         if (method == "QIM"){
             QIM_extract(path);
         }
@@ -35,11 +41,15 @@ int main() {
     }
     else if (choice == "встраивание"){
         cout << "Введите путь до изображения: " << endl;
-        cin >> path;
+        cin  >> path;
+        cout << "" << endl;
         cout << "Введите название стегоизображения: " << endl;
         cin >> name;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "" << endl;
         cout << "Введите текст: " << endl;
-        cin >> text;
+        getline(cin, text);
+        cout << "" << endl;
         if (method == "QIM"){
             QIM_embed(path, text, name);
         }
@@ -57,8 +67,8 @@ int main() {
         cout << "Некорректно введенные данные :(";
     }
 
-    // QIM_embed("steg1.png", "hi stegongrap", "new_image.png");
-    // QIM_extract("new_image.png");
+
+    // PM1_extract("new_image.png");
 
     return 0;
 }

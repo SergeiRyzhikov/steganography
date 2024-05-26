@@ -1430,6 +1430,7 @@ CMakeFiles/steg_main.dir/main.cpp.o
  /home/ryzhikov/source/project_steg/LSB.h
  /home/ryzhikov/source/project_steg/PM1.h
  /home/ryzhikov/source/project_steg/QIM.h
+ /usr/include/c++/11/limits
 
 CMakeFiles/steg_main.dir/utils.cpp.o
  /home/ryzhikov/source/project_steg/utils.cpp

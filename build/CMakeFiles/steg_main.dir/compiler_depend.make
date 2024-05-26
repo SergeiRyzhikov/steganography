@@ -1425,7 +1425,8 @@ CMakeFiles/steg_main.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/istream.tcc \
   ../LSB.h \
   ../PM1.h \
-  ../QIM.h
+  ../QIM.h \
+  /usr/include/c++/11/limits
 
 CMakeFiles/steg_main.dir/utils.cpp.o: ../utils.cpp \
   /usr/include/stdc-predef.h \
