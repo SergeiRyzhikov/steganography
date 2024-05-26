@@ -1,6 +1,13 @@
 #include <string>
 #include <vector>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
+
+int randomBinary() {
+    return rand() % 2; // возвращаем 0 или 1
+}
+
 
 string addZeros(string s) {
     if (s.length()<8) {

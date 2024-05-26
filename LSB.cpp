@@ -7,7 +7,7 @@
 using namespace std;
 
 
-int PM1_extract(string path) {
+int LSB_extract(string path) {
 
     cv::Mat image = cv::imread(path);
     if(image.empty()) {
@@ -37,7 +37,7 @@ int PM1_extract(string path) {
     return 0;
 }
 
-int PM1_embed(string path, string text) {
+int LSB_embed(string path, string text) {
     string binaryText = convertText(text);
     
     cv::Mat image = cv::imread(path);

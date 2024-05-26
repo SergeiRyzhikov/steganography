@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ryzhikov/source/project_steg/PM1.cpp" "CMakeFiles/steg_main.dir/PM1.cpp.o" "gcc" "CMakeFiles/steg_main.dir/PM1.cpp.o.d"
+  "/home/ryzhikov/source/project_steg/LSB.cpp" "CMakeFiles/steg_main.dir/LSB.cpp.o" "gcc" "CMakeFiles/steg_main.dir/LSB.cpp.o.d"
   "/home/ryzhikov/source/project_steg/main.cpp" "CMakeFiles/steg_main.dir/main.cpp.o" "gcc" "CMakeFiles/steg_main.dir/main.cpp.o.d"
   "/home/ryzhikov/source/project_steg/utils.cpp" "CMakeFiles/steg_main.dir/utils.cpp.o" "gcc" "CMakeFiles/steg_main.dir/utils.cpp.o.d"
   )

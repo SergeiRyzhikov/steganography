@@ -4,6 +4,8 @@
 #include <string>
 #include <vector>
 
+int randomBinary();
+
 std::string convertText(std::string text);
 
 std::string toBinary(int decimal);

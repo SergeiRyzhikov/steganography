@@ -1,5 +1,5 @@
-CMakeFiles/steg_main.dir/main.cpp.o: \
- /home/ryzhikov/source/project_steg/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/steg_main.dir/LSB.cpp.o: \
+ /home/ryzhikov/source/project_steg/LSB.cpp /usr/include/stdc-predef.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -346,5 +346,4 @@ CMakeFiles/steg_main.dir/main.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /home/ryzhikov/source/project_steg/utils.h \
- /home/ryzhikov/source/project_steg/LSB.h
+ /home/ryzhikov/source/project_steg/utils.h

@@ -97,32 +97,32 @@ CMakeFiles/steg_main.dir/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/steg_main.dir/utils.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryzhikov/source/project_steg/utils.cpp -o CMakeFiles/steg_main.dir/utils.cpp.s
 
-CMakeFiles/steg_main.dir/PM1.cpp.o: CMakeFiles/steg_main.dir/flags.make
-CMakeFiles/steg_main.dir/PM1.cpp.o: ../PM1.cpp
-CMakeFiles/steg_main.dir/PM1.cpp.o: CMakeFiles/steg_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/steg_main.dir/PM1.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/steg_main.dir/PM1.cpp.o -MF CMakeFiles/steg_main.dir/PM1.cpp.o.d -o CMakeFiles/steg_main.dir/PM1.cpp.o -c /home/ryzhikov/source/project_steg/PM1.cpp
+CMakeFiles/steg_main.dir/LSB.cpp.o: CMakeFiles/steg_main.dir/flags.make
+CMakeFiles/steg_main.dir/LSB.cpp.o: ../LSB.cpp
+CMakeFiles/steg_main.dir/LSB.cpp.o: CMakeFiles/steg_main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryzhikov/source/project_steg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/steg_main.dir/LSB.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/steg_main.dir/LSB.cpp.o -MF CMakeFiles/steg_main.dir/LSB.cpp.o.d -o CMakeFiles/steg_main.dir/LSB.cpp.o -c /home/ryzhikov/source/project_steg/LSB.cpp
 
-CMakeFiles/steg_main.dir/PM1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/steg_main.dir/PM1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryzhikov/source/project_steg/PM1.cpp > CMakeFiles/steg_main.dir/PM1.cpp.i
+CMakeFiles/steg_main.dir/LSB.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/steg_main.dir/LSB.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryzhikov/source/project_steg/LSB.cpp > CMakeFiles/steg_main.dir/LSB.cpp.i
 
-CMakeFiles/steg_main.dir/PM1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/steg_main.dir/PM1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryzhikov/source/project_steg/PM1.cpp -o CMakeFiles/steg_main.dir/PM1.cpp.s
+CMakeFiles/steg_main.dir/LSB.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/steg_main.dir/LSB.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryzhikov/source/project_steg/LSB.cpp -o CMakeFiles/steg_main.dir/LSB.cpp.s
 
 # Object files for target steg_main
 steg_main_OBJECTS = \
 "CMakeFiles/steg_main.dir/main.cpp.o" \
 "CMakeFiles/steg_main.dir/utils.cpp.o" \
-"CMakeFiles/steg_main.dir/PM1.cpp.o"
+"CMakeFiles/steg_main.dir/LSB.cpp.o"
 
 # External object files for target steg_main
 steg_main_EXTERNAL_OBJECTS =
 
 steg_main: CMakeFiles/steg_main.dir/main.cpp.o
 steg_main: CMakeFiles/steg_main.dir/utils.cpp.o
-steg_main: CMakeFiles/steg_main.dir/PM1.cpp.o
+steg_main: CMakeFiles/steg_main.dir/LSB.cpp.o
 steg_main: CMakeFiles/steg_main.dir/build.make
 steg_main: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 steg_main: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
