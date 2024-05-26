@@ -19,12 +19,11 @@ int PM1_embed(string imagePath, string text, string imageName) {
     int rows = image.rows;
     int cols = image.cols;
     int rounds = 0;
-    cout << binaryText.length() << endl;
     for (int y = 0; y < rows; ++y) {
         for (int x = 0; x < cols; ++x) {
             if (rounds < binaryText.length()) {
                 
-                int bit = binaryText[rounds]- '0';
+                int bit = binaryText[rounds] - '0';
                 cv::Vec3b pixel = image.at<cv::Vec3b>(y, x);
 
                 int blue_current_pixel = static_cast<int>(pixel[0]);

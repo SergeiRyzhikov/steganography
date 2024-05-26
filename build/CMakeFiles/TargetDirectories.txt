@@ -1,3 +1,4 @@
 /home/ryzhikov/source/project_steg/build/CMakeFiles/steg_main.dir
+/home/ryzhikov/source/project_steg/build/CMakeFiles/MyTests.dir
 /home/ryzhikov/source/project_steg/build/CMakeFiles/edit_cache.dir
 /home/ryzhikov/source/project_steg/build/CMakeFiles/rebuild_cache.dir

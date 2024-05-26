@@ -129,6 +129,19 @@ steg_main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/build
 .PHONY : steg_main/fast
 
+#=============================================================================
+# Target rules for targets named MyTests
+
+# Build rule for target.
+MyTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyTests
+.PHONY : MyTests
+
+# fast build rule for target.
+MyTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/build
+.PHONY : MyTests/fast
+
 LSB.o: LSB.cpp.o
 .PHONY : LSB.o
 
@@ -225,6 +238,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/steg_main.dir/build.make CMakeFiles/steg_main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+test.o: test.cpp.o
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTests.dir/build.make CMakeFiles/MyTests.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 utils.o: utils.cpp.o
 .PHONY : utils.o
 
@@ -257,6 +294,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... MyTests"
 	@echo "... steg_main"
 	@echo "... LSB.o"
 	@echo "... LSB.i"
@@ -270,6 +308,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 	@echo "... utils.o"
 	@echo "... utils.i"
 	@echo "... utils.s"
