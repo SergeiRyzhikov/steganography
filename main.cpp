@@ -1,9 +1,5 @@
-// #include <opencv2/opencv.hpp>
 #include <iostream>
 #include <string>
-// #include <vector>
-// #include <cmath>
-// #include "utils.h"
 #include "LSB.h"
 #include "PM1.h"
 #include "QIM.h"
@@ -12,20 +8,20 @@ using namespace std;
 
 
 int main() {
-    // PM1_embed("steg1.png", "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj", "new_image.png");
-    
-
     string method, choice, path, name, text;
     cout << "Выберите стегонаграфический метод (PM1, QIM, LSB): " << endl;
     cin >> method;
     cout << "" << endl;
+
     cout << "Выберите встраивание или извлечение: " << endl;
     cin >> choice;
     cout << "" << endl;
+
     if (choice == "извлечение"){
         cout << "Введите путь до изображения: " << endl;
         cin >> path;
         cout << "" << endl;
+
         if (method == "QIM"){
             QIM_extract(path);
         }
@@ -36,20 +32,24 @@ int main() {
             PM1_extract(path);
         }
         else {
-            cout << "Метод введен неверно :(";
+            cout << "Метод введен неверно :(" << endl;
         }
     }
+
     else if (choice == "встраивание"){
         cout << "Введите путь до изображения: " << endl;
         cin  >> path;
         cout << "" << endl;
+
         cout << "Введите название стегоизображения: " << endl;
         cin >> name;
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "" << endl;
+
         cout << "Введите текст: " << endl;
         getline(cin, text);
         cout << "" << endl;
+
         if (method == "QIM"){
             QIM_embed(path, text, name);
         }
@@ -60,15 +60,13 @@ int main() {
             PM1_embed(path, text, name);
         }
         else {
-            cout << "Метод введен неверно :(";
+            cout << "Метод введен неверно :(" << endl;
         }
     }
+
     else {
-        cout << "Некорректно введенные данные :(";
+        cout << "Некорректно введенные данные :(" << endl;
     }
-
-
-    // PM1_extract("new_image.png");
 
     return 0;
 }
