@@ -7,7 +7,13 @@
 using namespace std;
 
 /**
- * @brief Extracts embedded text from an image using the LSB steganography method.
+ * @file LSB.cpp
+ * @brief Embeding and extracting using LSB method.
+ * 
+ */
+
+/**
+ * @brief Extracts embedded text from an image using the Least Significant Bit (LSB) method.
  * 
  * This function takes the path to an image file with embedded text. It reads the least significant
  * bit (LSB) of the blue channel of each pixel and converts the extracted binary data back to text.
@@ -46,11 +52,17 @@ int LSB_extract(string path) {
 }
 
 /**
- * @brief Embeds text into an image using the LSB steganography method.
+ * @brief Embeds text into an image using the Least Significant Bit (LSB) method.
  * 
  * This function takes an image path, text to embed, and an output image name.
- * It converts the text to binary and embeds it into the least significant bit (LSB) 
+ * It converts the text to binary and embeds it into the least significant bit (LSB)
  * of the blue channel of the image pixels.
+ * 
+ * Формула встраивания:
+ * \f[
+ * P_i = p_7p_6p_5p_4p_3p_2p_1p_0, \quad
+ * P_i' = p_7p_6p_5p_4p_3p_2p_1m_i
+ * \f]
  * 
  * @param imagePath Path to the input image file.
  * @param text Text to embed into the image.

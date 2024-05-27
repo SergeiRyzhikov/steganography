@@ -74,6 +74,9 @@ $(function() {
 <div class="title">QIM.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Embeding and extracting using QIM method.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;opencv2/opencv.hpp&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -85,7 +88,7 @@ Include dependency graph for QIM.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="QIM_8cpp__incl.png" border="0" usemap="#aQIM_8cpp" alt=""/></div>
 <map name="aQIM_8cpp" id="aQIM_8cpp">
-<area shape="rect" title=" " alt="" coords="323,5,397,32"/>
+<area shape="rect" title="Embeding and extracting using QIM method." alt="" coords="323,5,397,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,160,107"/>
 <area shape="rect" title=" " alt="" coords="184,80,264,107"/>
 <area shape="rect" title=" " alt="" coords="288,80,347,107"/>
@@ -104,7 +107,9 @@ Functions</h2></td></tr>
 <tr class="memdesc:af6b85536b9aceb1c2e22dcb86c58d0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts embedded text from an image using the Quantization Index Modulation (QIM) method.  <a href="QIM_8cpp.html#af6b85536b9aceb1c2e22dcb86c58d0cd">More...</a><br /></td></tr>
 <tr class="separator:af6b85536b9aceb1c2e22dcb86c58d0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Embeding and extracting using QIM method. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a464d975f606cd6f02823b4d921ed3e47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a464d975f606cd6f02823b4d921ed3e47">&#9670;&nbsp;</a></span>QIM_embed()</h2>
 
@@ -139,6 +144,12 @@ Functions</h2></td></tr>
 
 <p>Embeds text into an image using the Quantization Index Modulation (QIM) method. </p>
 <p>This function takes an image path, text to embed, and an output image name. It converts the text to binary and embeds it into the blue channel of the image pixels using quantization with a specified quantization step.</p>
+<p>Формула встраивания: </p><p class="formulaDsp">
+\[ P_i&#39; = q \cdot \left\lfloor \frac{P_i}{q} \right\rfloor + \frac{q}{2} \cdot m_i, \]
+</p>
+<p>Формула извлечения: </p><p class="formulaDsp">
+\[ m_i = \arg \min_{e \in \{0,1\}} \left| P_i&#39; - P_{i,e}&#39;&#39; \right|, \]
+</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">imagePath</td><td>Path to the input image file. </td></tr>

@@ -1,5 +1,5 @@
 <map id="PM1_extract" name="PM1_extract">
-<area shape="rect" id="node1" title="Extracts embedded text from an image using the PM1 steganography method." alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node1" title="Extracts embedded text from an image using the Plus&#45;Minus One (PM1) method." alt="" coords="5,5,108,32"/>
 <area shape="rect" id="node2" href="$utils_8cpp.html#af49597efc67d91bdf5f0d510c7d86740" title="Converts a binary string representing text back to its original text form." alt="" coords="156,5,300,32"/>
 <area shape="rect" id="node3" href="$utils_8cpp.html#a84463c9750c4f1a309ceb49651faa23f" title="Converts a binary string to its decimal representation." alt="" coords="348,5,479,32"/>
 </map>

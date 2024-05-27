@@ -1,5 +1,10 @@
 \hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
 \label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Main entry point for the steganography program.  
+
+
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include \char`\"{}LSB.\+h\char`\"{}}\newline
@@ -20,6 +25,11 @@ int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 \begin{DoxyCompactList}\small\item\em Main function to drive the steganography program. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Main entry point for the steganography program. 
+
+This file contains the main function which allows the user to choose between different steganography methods (PM1, QIM, LSB) and perform embedding or extraction of text in/from images. 
+
 \doxysubsection{Function Documentation}
 \mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
 \index{main.cpp@{main.cpp}!main@{main}}
@@ -32,6 +42,13 @@ int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 Main function to drive the steganography program. 
 
 This function allows the user to select a steganography method and either embed text into an image or extract text from an image using the chosen method.
+
+The following methods are supported\+:
+\begin{DoxyItemize}
+\item {\bfseries{LSB (Least Significant Bit)}}\+: \[ P_i = p_7p_6p_5p_4p_3p_2p_1p_0, \quad P_i\textnormal{\textquotesingle} = p_7p_6p_5p_4p_3p_2p_1m_i \]
+\item {\bfseries{PM1 (Plus-\/\+Minus One)}}\+: \[ P_i\textnormal{\textquotesingle} = \begin{cases} P_i \pm 1 \cdot r, & \text{if } P_i \mod 2 \neq m_i; \\ P_i, & \text{otherwise}, \end{cases} \]
+\item {\bfseries{QIM (Quantization Index Modulation)}}\+: \[ P_i\textnormal{\textquotesingle} = q \cdot \left\lfloor \frac{P_i}{q} \right\rfloor + \frac{q}{2} \cdot m_i \]
+\end{DoxyItemize}
 
 \begin{DoxyReturn}{Returns}
 int Returns 0 on successful execution. 

@@ -1,7 +1,7 @@
 <map id="convertExtractText" name="convertExtractText">
 <area shape="rect" id="node1" title="Converts a binary string representing text back to its original text form." alt="" coords="259,56,403,83"/>
-<area shape="rect" id="node2" href="$LSB_8cpp.html#a79066aadf4f9c835329e337f9ef81b24" title="Extracts embedded text from an image using the LSB steganography method." alt="" coords="110,5,209,32"/>
-<area shape="rect" id="node4" href="$PM1_8cpp.html#a98b1c54da412f2134c11021af9d1c744" title="Extracts embedded text from an image using the PM1 steganography method." alt="" coords="108,56,211,83"/>
+<area shape="rect" id="node2" href="$LSB_8cpp.html#a79066aadf4f9c835329e337f9ef81b24" title="Extracts embedded text from an image using the Least Significant Bit (LSB) method." alt="" coords="110,5,209,32"/>
+<area shape="rect" id="node4" href="$PM1_8cpp.html#a98b1c54da412f2134c11021af9d1c744" title="Extracts embedded text from an image using the Plus&#45;Minus One (PM1) method." alt="" coords="108,56,211,83"/>
 <area shape="rect" id="node5" href="$QIM_8cpp.html#af6b85536b9aceb1c2e22dcb86c58d0cd" title="Extracts embedded text from an image using the Quantization Index Modulation (QIM) method." alt="" coords="109,107,210,133"/>
 <area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function to drive the steganography program." alt="" coords="5,56,60,83"/>
 </map>

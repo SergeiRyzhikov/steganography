@@ -1,11 +1,17 @@
 \hypertarget{LSB_8cpp}{}\doxysection{LSB.\+cpp File Reference}
 \label{LSB_8cpp}\index{LSB.cpp@{LSB.cpp}}
+
+
+Embeding and extracting using LSB method.  
+
+
 {\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
-Include dependency graph for LSB.\+cpp\+:\nopagebreak
+Include dependency graph for LSB.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,9 +22,14 @@ Include dependency graph for LSB.\+cpp\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{LSB_8cpp_a79066aadf4f9c835329e337f9ef81b24}{LSB\+\_\+extract}} (string path)
-\begin{DoxyCompactList}\small\item\em Extracts embedded text from an image using the LSB steganography method. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Extracts embedded text from an image using the Least Significant Bit (LSB) method. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{LSB_8cpp_afb99815a51961099bccf92786fa5c7f7}{LSB\+\_\+embed}} (string image\+Path, string text, string image\+Name)
-\begin{DoxyCompactList}\small\item\em Embeds text into an image using the LSB steganography method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Embeds text into an image using the Least Significant Bit (LSB) method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Embeding and extracting using LSB method. 
+
 
 
 \doxysubsection{Function Documentation}
@@ -30,9 +41,11 @@ int \mbox{\hyperlink{LSB_8cpp_afb99815a51961099bccf92786fa5c7f7}{LSB\+\_\+embed}
 
 
 
-Embeds text into an image using the LSB steganography method. 
+Embeds text into an image using the Least Significant Bit (LSB) method. 
 
 This function takes an image path, text to embed, and an output image name. It converts the text to binary and embeds it into the least significant bit (LSB) of the blue channel of the image pixels.
+
+Формула встраивания\+: \[ P_i = p_7p_6p_5p_4p_3p_2p_1p_0, \quad P_i\textnormal{\textquotesingle} = p_7p_6p_5p_4p_3p_2p_1m_i \]
 
 
 \begin{DoxyParams}{Parameters}
@@ -68,7 +81,7 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Extracts embedded text from an image using the LSB steganography method. 
+Extracts embedded text from an image using the Least Significant Bit (LSB) method. 
 
 This function takes the path to an image file with embedded text. It reads the least significant bit (LSB) of the blue channel of each pixel and converts the extracted binary data back to text.
 

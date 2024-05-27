@@ -74,6 +74,9 @@ $(function() {
 <div class="title">LSB.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Embeding and extracting using LSB method.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;opencv2/opencv.hpp&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -84,7 +87,7 @@ Include dependency graph for LSB.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="LSB_8cpp__incl.png" border="0" usemap="#aLSB_8cpp" alt=""/></div>
 <map name="aLSB_8cpp" id="aLSB_8cpp">
-<area shape="rect" title=" " alt="" coords="281,5,354,32"/>
+<area shape="rect" title="Embeding and extracting using LSB method." alt="" coords="281,5,354,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,160,107"/>
 <area shape="rect" title=" " alt="" coords="184,80,264,107"/>
 <area shape="rect" title=" " alt="" coords="288,80,347,107"/>
@@ -96,13 +99,15 @@ Include dependency graph for LSB.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a79066aadf4f9c835329e337f9ef81b24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LSB_8cpp.html#a79066aadf4f9c835329e337f9ef81b24">LSB_extract</a> (string path)</td></tr>
-<tr class="memdesc:a79066aadf4f9c835329e337f9ef81b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts embedded text from an image using the LSB steganography method.  <a href="LSB_8cpp.html#a79066aadf4f9c835329e337f9ef81b24">More...</a><br /></td></tr>
+<tr class="memdesc:a79066aadf4f9c835329e337f9ef81b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts embedded text from an image using the Least Significant Bit (LSB) method.  <a href="LSB_8cpp.html#a79066aadf4f9c835329e337f9ef81b24">More...</a><br /></td></tr>
 <tr class="separator:a79066aadf4f9c835329e337f9ef81b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb99815a51961099bccf92786fa5c7f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LSB_8cpp.html#afb99815a51961099bccf92786fa5c7f7">LSB_embed</a> (string imagePath, string text, string imageName)</td></tr>
-<tr class="memdesc:afb99815a51961099bccf92786fa5c7f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Embeds text into an image using the LSB steganography method.  <a href="LSB_8cpp.html#afb99815a51961099bccf92786fa5c7f7">More...</a><br /></td></tr>
+<tr class="memdesc:afb99815a51961099bccf92786fa5c7f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Embeds text into an image using the Least Significant Bit (LSB) method.  <a href="LSB_8cpp.html#afb99815a51961099bccf92786fa5c7f7">More...</a><br /></td></tr>
 <tr class="separator:afb99815a51961099bccf92786fa5c7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Embeding and extracting using LSB method. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="afb99815a51961099bccf92786fa5c7f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb99815a51961099bccf92786fa5c7f7">&#9670;&nbsp;</a></span>LSB_embed()</h2>
 
@@ -135,8 +140,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Embeds text into an image using the LSB steganography method. </p>
+<p>Embeds text into an image using the Least Significant Bit (LSB) method. </p>
 <p>This function takes an image path, text to embed, and an output image name. It converts the text to binary and embeds it into the least significant bit (LSB) of the blue channel of the image pixels.</p>
+<p>Формула встраивания: </p><p class="formulaDsp">
+\[ P_i = p_7p_6p_5p_4p_3p_2p_1p_0, \quad P_i&#39; = p_7p_6p_5p_4p_3p_2p_1m_i \]
+</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">imagePath</td><td>Path to the input image file. </td></tr>
@@ -151,7 +159,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="LSB_8cpp_afb99815a51961099bccf92786fa5c7f7_cgraph.png" border="0" usemap="#aLSB_8cpp_afb99815a51961099bccf92786fa5c7f7_cgraph" alt=""/></div>
 <map name="aLSB_8cpp_afb99815a51961099bccf92786fa5c7f7_cgraph" id="aLSB_8cpp_afb99815a51961099bccf92786fa5c7f7_cgraph">
-<area shape="rect" title="Embeds text into an image using the LSB steganography method." alt="" coords="5,56,104,83"/>
+<area shape="rect" title="Embeds text into an image using the Least Significant Bit (LSB) method." alt="" coords="5,56,104,83"/>
 <area shape="rect" href="utils_8cpp.html#a84463c9750c4f1a309ceb49651faa23f" title="Converts a binary string to its decimal representation." alt="" coords="152,5,283,32"/>
 <area shape="rect" href="utils_8cpp.html#a9f0e8c87b7156ffd157b1ba174b43e71" title="Converts a text string to its binary representation." alt="" coords="168,56,267,83"/>
 <area shape="rect" href="utils_8cpp.html#a24fdcf507cdc17369ff493ff7d9f7408" title="Converts a decimal number to its binary representation as a string." alt="" coords="333,107,411,133"/>
@@ -163,7 +171,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="LSB_8cpp_afb99815a51961099bccf92786fa5c7f7_icgraph.png" border="0" usemap="#aLSB_8cpp_afb99815a51961099bccf92786fa5c7f7_icgraph" alt=""/></div>
 <map name="aLSB_8cpp_afb99815a51961099bccf92786fa5c7f7_icgraph" id="aLSB_8cpp_afb99815a51961099bccf92786fa5c7f7_icgraph">
-<area shape="rect" title="Embeds text into an image using the LSB steganography method." alt="" coords="108,5,207,32"/>
+<area shape="rect" title="Embeds text into an image using the Least Significant Bit (LSB) method." alt="" coords="108,5,207,32"/>
 <area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function to drive the steganography program." alt="" coords="5,5,60,32"/>
 </map>
 </div>
@@ -186,7 +194,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Extracts embedded text from an image using the LSB steganography method. </p>
+<p>Extracts embedded text from an image using the Least Significant Bit (LSB) method. </p>
 <p>This function takes the path to an image file with embedded text. It reads the least significant bit (LSB) of the blue channel of each pixel and converts the extracted binary data back to text.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -200,7 +208,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="LSB_8cpp_a79066aadf4f9c835329e337f9ef81b24_cgraph.png" border="0" usemap="#aLSB_8cpp_a79066aadf4f9c835329e337f9ef81b24_cgraph" alt=""/></div>
 <map name="aLSB_8cpp_a79066aadf4f9c835329e337f9ef81b24_cgraph" id="aLSB_8cpp_a79066aadf4f9c835329e337f9ef81b24_cgraph">
-<area shape="rect" title="Extracts embedded text from an image using the LSB steganography method." alt="" coords="5,31,104,57"/>
+<area shape="rect" title="Extracts embedded text from an image using the Least Significant Bit (LSB) method." alt="" coords="5,31,104,57"/>
 <area shape="rect" href="utils_8cpp.html#af49597efc67d91bdf5f0d510c7d86740" title="Converts a binary string representing text back to its original text form." alt="" coords="152,5,296,32"/>
 <area shape="rect" href="utils_8cpp.html#a24fdcf507cdc17369ff493ff7d9f7408" title="Converts a decimal number to its binary representation as a string." alt="" coords="185,56,263,83"/>
 <area shape="rect" href="utils_8cpp.html#a84463c9750c4f1a309ceb49651faa23f" title="Converts a binary string to its decimal representation." alt="" coords="344,5,475,32"/>
@@ -211,7 +219,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="LSB_8cpp_a79066aadf4f9c835329e337f9ef81b24_icgraph.png" border="0" usemap="#aLSB_8cpp_a79066aadf4f9c835329e337f9ef81b24_icgraph" alt=""/></div>
 <map name="aLSB_8cpp_a79066aadf4f9c835329e337f9ef81b24_icgraph" id="aLSB_8cpp_a79066aadf4f9c835329e337f9ef81b24_icgraph">
-<area shape="rect" title="Extracts embedded text from an image using the LSB steganography method." alt="" coords="108,5,207,32"/>
+<area shape="rect" title="Extracts embedded text from an image using the Least Significant Bit (LSB) method." alt="" coords="108,5,207,32"/>
 <area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function to drive the steganography program." alt="" coords="5,5,60,32"/>
 </map>
 </div>

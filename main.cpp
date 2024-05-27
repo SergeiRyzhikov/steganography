@@ -7,10 +7,37 @@
 using namespace std;
 
 /**
+ * @file main.cpp
+ * @brief Main entry point for the steganography program.
+ * 
+ * This file contains the main function which allows the user to choose between different
+ * steganography methods (PM1, QIM, LSB) and perform embedding or extraction of text in/from images.
+ */
+
+/**
  * @brief Main function to drive the steganography program.
  * 
  * This function allows the user to select a steganography method and either embed text into
  * an image or extract text from an image using the chosen method.
+ * 
+ * The following methods are supported:
+ * - **LSB (Least Significant Bit)**:
+ *   \f[
+ *   P_i = p_7p_6p_5p_4p_3p_2p_1p_0, \quad
+ *   P_i' = p_7p_6p_5p_4p_3p_2p_1m_i
+ *   \f]
+ * - **PM1 (Plus-Minus One)**:
+ *   \f[
+ *   P_i' = 
+ *   \begin{cases} 
+ *   P_i \pm 1 \cdot r, & \text{if } P_i \mod 2 \neq m_i; \\
+ *   P_i, & \text{otherwise},
+ *   \end{cases}
+ *   \f]
+ * - **QIM (Quantization Index Modulation)**:
+ *   \f[
+ *   P_i' = q \cdot \left\lfloor \frac{P_i}{q} \right\rfloor + \frac{q}{2} \cdot m_i
+ *   \f]
  * 
  * @return int Returns 0 on successful execution.
  */

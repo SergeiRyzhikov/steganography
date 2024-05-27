@@ -74,6 +74,9 @@ $(function() {
 <div class="title">main.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Main entry point for the steganography program.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &quot;LSB.h&quot;</code><br />
@@ -85,7 +88,7 @@ Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" alt=""/></div>
 <map name="amain_8cpp" id="amain_8cpp">
-<area shape="rect" title=" " alt="" coords="223,5,305,32"/>
+<area shape="rect" title="Main entry point for the steganography program." alt="" coords="223,5,305,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,85,107"/>
 <area shape="rect" title=" " alt="" coords="109,80,168,107"/>
 <area shape="rect" title=" " alt="" coords="192,80,251,107"/>
@@ -101,7 +104,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function to drive the steganography program.  <a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">More...</a><br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Main entry point for the steganography program. </p>
+<p>This file contains the main function which allows the user to choose between different steganography methods (PM1, QIM, LSB) and perform embedding or extraction of text in/from images. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -119,6 +125,20 @@ Functions</h2></td></tr>
 
 <p>Main function to drive the steganography program. </p>
 <p>This function allows the user to select a steganography method and either embed text into an image or extract text from an image using the chosen method.</p>
+<p>The following methods are supported:</p><ul>
+<li><b>LSB (Least Significant Bit)</b>: <p class="formulaDsp">
+\[ P_i = p_7p_6p_5p_4p_3p_2p_1p_0, \quad P_i&#39; = p_7p_6p_5p_4p_3p_2p_1m_i \]
+</p>
+</li>
+<li><b>PM1 (Plus-Minus One)</b>: <p class="formulaDsp">
+\[ P_i&#39; = \begin{cases} P_i \pm 1 \cdot r, &amp; \text{if } P_i \mod 2 \neq m_i; \\ P_i, &amp; \text{otherwise}, \end{cases} \]
+</p>
+</li>
+<li><b>QIM (Quantization Index Modulation)</b>: <p class="formulaDsp">
+\[ P_i&#39; = q \cdot \left\lfloor \frac{P_i}{q} \right\rfloor + \frac{q}{2} \cdot m_i \]
+</p>
+</li>
+</ul>
 <dl class="section return"><dt>Returns</dt><dd>int Returns 0 on successful execution. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
@@ -126,10 +146,10 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
 <map name="amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
 <area shape="rect" title="Main function to drive the steganography program." alt="" coords="5,132,60,159"/>
-<area shape="rect" href="LSB_8cpp.html#afb99815a51961099bccf92786fa5c7f7" title="Embeds text into an image using the LSB steganography method." alt="" coords="110,157,209,184"/>
-<area shape="rect" href="LSB_8cpp.html#a79066aadf4f9c835329e337f9ef81b24" title="Extracts embedded text from an image using the LSB steganography method." alt="" coords="110,107,209,133"/>
+<area shape="rect" href="LSB_8cpp.html#afb99815a51961099bccf92786fa5c7f7" title="Embeds text into an image using the Least Significant Bit (LSB) method." alt="" coords="110,157,209,184"/>
+<area shape="rect" href="LSB_8cpp.html#a79066aadf4f9c835329e337f9ef81b24" title="Extracts embedded text from an image using the Least Significant Bit (LSB) method." alt="" coords="110,107,209,133"/>
 <area shape="rect" href="PM1_8cpp.html#ab82e5352149b1e58816573d7311ced94" title="Embeds text into an image using the Plus&#45;Minus One (PM1) method." alt="" coords="108,259,211,285"/>
-<area shape="rect" href="PM1_8cpp.html#a98b1c54da412f2134c11021af9d1c744" title="Extracts embedded text from an image using the PM1 steganography method." alt="" coords="108,5,211,32"/>
+<area shape="rect" href="PM1_8cpp.html#a98b1c54da412f2134c11021af9d1c744" title="Extracts embedded text from an image using the Plus&#45;Minus One (PM1) method." alt="" coords="108,5,211,32"/>
 <area shape="rect" href="QIM_8cpp.html#a464d975f606cd6f02823b4d921ed3e47" title="Embeds text into an image using the Quantization Index Modulation (QIM) method." alt="" coords="109,208,209,235"/>
 <area shape="rect" href="QIM_8cpp.html#af6b85536b9aceb1c2e22dcb86c58d0cd" title="Extracts embedded text from an image using the Quantization Index Modulation (QIM) method." alt="" coords="109,56,210,83"/>
 <area shape="rect" href="utils_8cpp.html#a84463c9750c4f1a309ceb49651faa23f" title="Converts a binary string to its decimal representation." alt="" coords="451,81,581,108"/>

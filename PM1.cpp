@@ -7,6 +7,12 @@
 using namespace std;
 
 /**
+ * @file PM1.cpp
+ * @brief Embeding and extracting using PM1 method.
+ * 
+ */
+
+/**
  * @brief Embeds text into an image using the Plus-Minus One (PM1) method.
  * 
  * This function takes an image path, text to embed, and an output image name.
@@ -19,9 +25,6 @@ using namespace std;
  * P_i, & \text{otherwise}
  * \end{cases}
  * \f]
- * 
- * where \( P_i \) is the pixel value before embedding, \( P_i' \) is the pixel value after embedding,
- * and \( m_i \) is the bit of the message.
  * 
  * @param imagePath Path to the input image file.
  * @param text Text to embed into the image.
@@ -75,10 +78,11 @@ int PM1_embed(string imagePath, string text, string imageName) {
 }
 
 /**
- * @brief Extracts embedded text from an image using the PM1 steganography method.
+ * @brief Extracts embedded text from an image using the Plus-Minus One (PM1) method.
  * 
  * This function takes the path to an image file with embedded text. It reads the blue channel
- * of the image pixels and converts the extracted binary data back to text.
+ * of the image pixels and extracts the embedded binary data by determining whether the pixel value
+ * is even or odd.
  * 
  * @param path Path to the image file with embedded text.
  * @return int Returns 0 on success, -1 if the image cannot be loaded.

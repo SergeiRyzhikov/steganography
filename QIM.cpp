@@ -8,12 +8,28 @@
 using namespace std;
 
 /**
+ * @file QIM.cpp
+ * @brief Embeding and extracting using QIM method.
+ * 
+ */
+
+/**
  * @brief Embeds text into an image using the Quantization Index Modulation (QIM) method.
  * 
  * This function takes an image path, text to embed, and an output image name.
  * It converts the text to binary and embeds it into the blue channel of the image pixels
  * using quantization with a specified quantization step.
  * 
+ * Формула встраивания:
+ * \f[
+ * P_i' = q \cdot \left\lfloor \frac{P_i}{q} \right\rfloor + \frac{q}{2} \cdot m_i,
+ * \f]
+ * 
+ * Формула извлечения:
+ * \f[
+ * m_i = \arg \min_{e \in \{0,1\}} \left| P_i' - P_{i,e}'' \right|,
+ * \f]
+ *
  * @param imagePath Path to the input image file.
  * @param text Text to embed into the image.
  * @param imageName Name of the output image file with embedded text.

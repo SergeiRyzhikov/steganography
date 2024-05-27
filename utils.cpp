@@ -6,6 +6,11 @@
 
 using namespace std;
 
+/**
+ * @file utils.cpp
+ * @brief Utils function for embeding and extracting.
+ * 
+ */
 
 /**
  * @brief Generates a random binary digit (0 or 1).

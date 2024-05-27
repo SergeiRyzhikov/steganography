@@ -1,11 +1,17 @@
 \hypertarget{PM1_8cpp}{}\doxysection{PM1.\+cpp File Reference}
 \label{PM1_8cpp}\index{PM1.cpp@{PM1.cpp}}
+
+
+Embeding and extracting using PM1 method.  
+
+
 {\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
-Include dependency graph for PM1.\+cpp\+:\nopagebreak
+Include dependency graph for PM1.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -18,7 +24,12 @@ Include dependency graph for PM1.\+cpp\+:\nopagebreak
 int \mbox{\hyperlink{PM1_8cpp_ab82e5352149b1e58816573d7311ced94}{PM1\+\_\+embed}} (string image\+Path, string text, string image\+Name)
 \begin{DoxyCompactList}\small\item\em Embeds text into an image using the Plus-\/\+Minus One (PM1) method. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{PM1_8cpp_a98b1c54da412f2134c11021af9d1c744}{PM1\+\_\+extract}} (string path)
-\begin{DoxyCompactList}\small\item\em Extracts embedded text from an image using the PM1 steganography method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Extracts embedded text from an image using the Plus-\/\+Minus One (PM1) method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Embeding and extracting using PM1 method. 
+
 
 
 \doxysubsection{Function Documentation}
@@ -35,8 +46,6 @@ Embeds text into an image using the Plus-\/\+Minus One (PM1) method.
 This function takes an image path, text to embed, and an output image name. It converts the text to binary and embeds it into the blue channel of the image pixels using the PM1 method. The embedding process can be described by the formula\+:
 
 \[ P_i\textnormal{\textquotesingle} = \begin{cases} P_i \pm 1, & \text{if } P_i \mod 2 \neq m_i \\ P_i, & \text{otherwise} \end{cases} \]
-
-where ( P\+\_\+i ) is the pixel value before embedding, ( P\+\_\+i\textquotesingle{} ) is the pixel value after embedding, and ( m\+\_\+i ) is the bit of the message.
 
 
 \begin{DoxyParams}{Parameters}
@@ -72,9 +81,9 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Extracts embedded text from an image using the PM1 steganography method. 
+Extracts embedded text from an image using the Plus-\/\+Minus One (PM1) method. 
 
-This function takes the path to an image file with embedded text. It reads the blue channel of the image pixels and converts the extracted binary data back to text.
+This function takes the path to an image file with embedded text. It reads the blue channel of the image pixels and extracts the embedded binary data by determining whether the pixel value is even or odd.
 
 
 \begin{DoxyParams}{Parameters}

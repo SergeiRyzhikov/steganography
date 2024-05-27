@@ -1,12 +1,18 @@
 \hypertarget{QIM_8cpp}{}\doxysection{QIM.\+cpp File Reference}
 \label{QIM_8cpp}\index{QIM.cpp@{QIM.cpp}}
+
+
+Embeding and extracting using QIM method.  
+
+
 {\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$cmath$>$}\newline
 {\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
-Include dependency graph for QIM.\+cpp\+:\nopagebreak
+Include dependency graph for QIM.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,6 +28,11 @@ int \mbox{\hyperlink{QIM_8cpp_af6b85536b9aceb1c2e22dcb86c58d0cd}{QIM\+\_\+extrac
 \begin{DoxyCompactList}\small\item\em Extracts embedded text from an image using the Quantization Index Modulation (QIM) method. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Embeding and extracting using QIM method. 
+
+
+
 \doxysubsection{Function Documentation}
 \mbox{\Hypertarget{QIM_8cpp_a464d975f606cd6f02823b4d921ed3e47}\label{QIM_8cpp_a464d975f606cd6f02823b4d921ed3e47}} 
 \index{QIM.cpp@{QIM.cpp}!QIM\_embed@{QIM\_embed}}
@@ -34,6 +45,10 @@ int \mbox{\hyperlink{QIM_8cpp_af6b85536b9aceb1c2e22dcb86c58d0cd}{QIM\+\_\+extrac
 Embeds text into an image using the Quantization Index Modulation (QIM) method. 
 
 This function takes an image path, text to embed, and an output image name. It converts the text to binary and embeds it into the blue channel of the image pixels using quantization with a specified quantization step.
+
+Формула встраивания\+: \[ P_i\textnormal{\textquotesingle} = q \cdot \left\lfloor \frac{P_i}{q} \right\rfloor + \frac{q}{2} \cdot m_i, \]
+
+Формула извлечения\+: \[ m_i = \arg \min_{e \in \{0,1\}} \left| P_i\textnormal{\textquotesingle} - P_{i,e}\textnormal{\textquotesingle}\textnormal{\textquotesingle} \right|, \]
 
 
 \begin{DoxyParams}{Parameters}
