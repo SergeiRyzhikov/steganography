@@ -1,0 +1,5 @@
+<map id="convertText" name="convertText">
+<area shape="rect" id="node1" title="Converts a text string to its binary representation." alt="" coords="5,31,104,57"/>
+<area shape="rect" id="node2" href="$utils_8cpp.html#a51fe6d6654dbf9d7cbfcbdf266921ec5" title="Adds leading zeros to a string to make its length 8." alt="" coords="152,5,235,32"/>
+<area shape="rect" id="node3" href="$utils_8cpp.html#a24fdcf507cdc17369ff493ff7d9f7408" title="Converts a decimal number to its binary representation as a string." alt="" coords="155,56,232,83"/>
+</map>

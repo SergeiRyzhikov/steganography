@@ -1,0 +1,17 @@
+# Doxyfile 1.9.1
+
+PROJECT_NAME           = "steganography"
+OUTPUT_DIRECTORY       = ./docs
+INPUT                  = utils.cpp
+RECURSIVE              = YES
+FILE_PATTERNS          = *.cpp *.h
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+WARNINGS               = YES
+QUIET                  = NO
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+EXTRACT_ALL = YES
+EXTRACT_PRIVATE = YES
+EXTRACT_STATIC  = YES
+HAVE_DOT = YES

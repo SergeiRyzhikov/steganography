@@ -5,6 +5,8 @@
 #include <stdexcept>
 
 using namespace std;
+
+
 /**
  * @brief Generates a random binary digit (0 or 1).
  * 
@@ -58,7 +60,6 @@ string toBinary(int decimal) {
 string convertText(string text){
     string data;
     for (int i = 0; i < text.length(); ++i) {
-
         if (int(text[i]) > 0 && int(text[i]) <256){
             string binary = addZeros(toBinary(int(text[i])));
             for (int j = 0; j < binary.length(); ++j) {
@@ -106,11 +107,9 @@ int binaryToDecimal(const std::string& binary) {
  * @return std::string The original text.
  */
 string convertExtractText(string extractedText){
-
     string text;
     for (int i = 0; i<extractedText.length(); i+=8){
         int code = binaryToDecimal(extractedText.substr(i, 8));
-
         if (code >31 && code < 127){
             text += char(code);
         }

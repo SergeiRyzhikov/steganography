@@ -6,7 +6,10 @@
 #include <limits>
 using namespace std;
 
-
+/**
+ * @brief Converts a binary string representing text back to its original text form.
+ * 
+ */
 int main() {
     string method, choice, path, name, text;
     cout << "Выберите стегонаграфический метод (PM1, QIM, LSB): " << endl;
