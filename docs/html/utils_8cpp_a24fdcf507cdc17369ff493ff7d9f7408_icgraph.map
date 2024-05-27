@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$utils_8cpp.html#a9f0e8c87b7156ffd157b1ba174b43e71" title="Converts a text string to its binary representation." alt="" coords="259,56,357,83"/>
 <area shape="rect" id="node3" href="$LSB_8cpp.html#afb99815a51961099bccf92786fa5c7f7" title="Embeds text into an image using the LSB steganography method." alt="" coords="110,5,209,32"/>
 <area shape="rect" id="node7" href="$LSB_8cpp.html#a79066aadf4f9c835329e337f9ef81b24" title="Extracts embedded text from an image using the LSB steganography method." alt="" coords="259,132,357,159"/>
-<area shape="rect" id="node5" href="$PM1_8cpp.html#ab82e5352149b1e58816573d7311ced94" title="Embeds text into an image using the PM1 steganography method." alt="" coords="108,56,211,83"/>
+<area shape="rect" id="node5" href="$PM1_8cpp.html#ab82e5352149b1e58816573d7311ced94" title="Embeds text into an image using the Plus&#45;Minus One (PM1) method." alt="" coords="108,56,211,83"/>
 <area shape="rect" id="node6" href="$QIM_8cpp.html#a464d975f606cd6f02823b4d921ed3e47" title="Embeds text into an image using the Quantization Index Modulation (QIM) method." alt="" coords="109,107,209,133"/>
 <area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function to drive the steganography program." alt="" coords="5,81,60,108"/>
 </map>

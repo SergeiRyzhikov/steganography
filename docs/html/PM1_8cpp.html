@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -89,7 +96,7 @@ Include dependency graph for PM1.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab82e5352149b1e58816573d7311ced94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PM1_8cpp.html#ab82e5352149b1e58816573d7311ced94">PM1_embed</a> (string imagePath, string text, string imageName)</td></tr>
-<tr class="memdesc:ab82e5352149b1e58816573d7311ced94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Embeds text into an image using the PM1 steganography method.  <a href="PM1_8cpp.html#ab82e5352149b1e58816573d7311ced94">More...</a><br /></td></tr>
+<tr class="memdesc:ab82e5352149b1e58816573d7311ced94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Embeds text into an image using the Plus-Minus One (PM1) method.  <a href="PM1_8cpp.html#ab82e5352149b1e58816573d7311ced94">More...</a><br /></td></tr>
 <tr class="separator:ab82e5352149b1e58816573d7311ced94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98b1c54da412f2134c11021af9d1c744"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PM1_8cpp.html#a98b1c54da412f2134c11021af9d1c744">PM1_extract</a> (string path)</td></tr>
 <tr class="memdesc:a98b1c54da412f2134c11021af9d1c744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts embedded text from an image using the PM1 steganography method.  <a href="PM1_8cpp.html#a98b1c54da412f2134c11021af9d1c744">More...</a><br /></td></tr>
@@ -128,8 +135,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Embeds text into an image using the PM1 steganography method. </p>
-<p>This function takes an image path, text to embed, and an output image name. It converts the text to binary and embeds it into the blue channel of the image pixels.</p>
+<p>Embeds text into an image using the Plus-Minus One (PM1) method. </p>
+<p>This function takes an image path, text to embed, and an output image name. It converts the text to binary and embeds it into the blue channel of the image pixels using the PM1 method. The embedding process can be described by the formula:</p>
+<p class="formulaDsp">
+\[ P_i&#39; = \begin{cases} P_i \pm 1, &amp; \text{if } P_i \mod 2 \neq m_i \\ P_i, &amp; \text{otherwise} \end{cases} \]
+</p>
+<p>where ( P_i ) is the pixel value before embedding, ( P_i' ) is the pixel value after embedding, and ( m_i ) is the bit of the message.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">imagePath</td><td>Path to the input image file. </td></tr>
@@ -144,7 +155,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="PM1_8cpp_ab82e5352149b1e58816573d7311ced94_cgraph.png" border="0" usemap="#aPM1_8cpp_ab82e5352149b1e58816573d7311ced94_cgraph" alt=""/></div>
 <map name="aPM1_8cpp_ab82e5352149b1e58816573d7311ced94_cgraph" id="aPM1_8cpp_ab82e5352149b1e58816573d7311ced94_cgraph">
-<area shape="rect" title="Embeds text into an image using the PM1 steganography method." alt="" coords="5,56,108,83"/>
+<area shape="rect" title="Embeds text into an image using the Plus&#45;Minus One (PM1) method." alt="" coords="5,56,108,83"/>
 <area shape="rect" href="utils_8cpp.html#a9f0e8c87b7156ffd157b1ba174b43e71" title="Converts a text string to its binary representation." alt="" coords="164,31,263,57"/>
 <area shape="rect" href="utils_8cpp.html#a3b4cfbbb69f94867a7c081673afa8d91" title="Generates a random binary digit (0 or 1)." alt="" coords="156,81,271,108"/>
 <area shape="rect" href="utils_8cpp.html#a51fe6d6654dbf9d7cbfcbdf266921ec5" title="Adds leading zeros to a string to make its length 8." alt="" coords="319,5,401,32"/>
@@ -156,7 +167,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="PM1_8cpp_ab82e5352149b1e58816573d7311ced94_icgraph.png" border="0" usemap="#aPM1_8cpp_ab82e5352149b1e58816573d7311ced94_icgraph" alt=""/></div>
 <map name="aPM1_8cpp_ab82e5352149b1e58816573d7311ced94_icgraph" id="aPM1_8cpp_ab82e5352149b1e58816573d7311ced94_icgraph">
-<area shape="rect" title="Embeds text into an image using the PM1 steganography method." alt="" coords="108,5,211,32"/>
+<area shape="rect" title="Embeds text into an image using the Plus&#45;Minus One (PM1) method." alt="" coords="108,5,211,32"/>
 <area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function to drive the steganography program." alt="" coords="5,5,60,32"/>
 </map>
 </div>

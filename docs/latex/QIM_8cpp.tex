@@ -1,0 +1,97 @@
+\hypertarget{QIM_8cpp}{}\doxysection{QIM.\+cpp File Reference}
+\label{QIM_8cpp}\index{QIM.cpp@{QIM.cpp}}
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+Include dependency graph for QIM.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{QIM_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{QIM_8cpp_a464d975f606cd6f02823b4d921ed3e47}{QIM\+\_\+embed}} (string image\+Path, string text, string image\+Name)
+\begin{DoxyCompactList}\small\item\em Embeds text into an image using the Quantization Index Modulation (QIM) method. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{QIM_8cpp_af6b85536b9aceb1c2e22dcb86c58d0cd}{QIM\+\_\+extract}} (string path)
+\begin{DoxyCompactList}\small\item\em Extracts embedded text from an image using the Quantization Index Modulation (QIM) method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{QIM_8cpp_a464d975f606cd6f02823b4d921ed3e47}\label{QIM_8cpp_a464d975f606cd6f02823b4d921ed3e47}} 
+\index{QIM.cpp@{QIM.cpp}!QIM\_embed@{QIM\_embed}}
+\index{QIM\_embed@{QIM\_embed}!QIM.cpp@{QIM.cpp}}
+\doxysubsubsection{\texorpdfstring{QIM\_embed()}{QIM\_embed()}}
+{\footnotesize\ttfamily int QIM\+\_\+embed (\begin{DoxyParamCaption}\item[{string}]{image\+Path,  }\item[{string}]{text,  }\item[{string}]{image\+Name }\end{DoxyParamCaption})}
+
+
+
+Embeds text into an image using the Quantization Index Modulation (QIM) method. 
+
+This function takes an image path, text to embed, and an output image name. It converts the text to binary and embeds it into the blue channel of the image pixels using quantization with a specified quantization step.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Path} & Path to the input image file. \\
+\hline
+{\em text} & Text to embed into the image. \\
+\hline
+{\em image\+Name} & Name of the output image file with embedded text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 on success, -\/1 if the image cannot be loaded. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{QIM_8cpp_a464d975f606cd6f02823b4d921ed3e47_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{QIM_8cpp_a464d975f606cd6f02823b4d921ed3e47_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{QIM_8cpp_af6b85536b9aceb1c2e22dcb86c58d0cd}\label{QIM_8cpp_af6b85536b9aceb1c2e22dcb86c58d0cd}} 
+\index{QIM.cpp@{QIM.cpp}!QIM\_extract@{QIM\_extract}}
+\index{QIM\_extract@{QIM\_extract}!QIM.cpp@{QIM.cpp}}
+\doxysubsubsection{\texorpdfstring{QIM\_extract()}{QIM\_extract()}}
+{\footnotesize\ttfamily int QIM\+\_\+extract (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Extracts embedded text from an image using the Quantization Index Modulation (QIM) method. 
+
+This function takes the path to an image file with embedded text. It reads the blue channel of the image pixels and extracts the embedded binary data using quantization with a specified quantization step.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the image file with embedded text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 on success, -\/1 if the image cannot be loaded. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{QIM_8cpp_af6b85536b9aceb1c2e22dcb86c58d0cd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{QIM_8cpp_af6b85536b9aceb1c2e22dcb86c58d0cd_icgraph}
+\end{center}
+\end{figure}

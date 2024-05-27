@@ -1,0 +1,206 @@
+\hypertarget{utils_8cpp}{}\doxysection{utils.\+cpp File Reference}
+\label{utils_8cpp}\index{utils.cpp@{utils.cpp}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+Include dependency graph for utils.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{utils_8cpp_a3b4cfbbb69f94867a7c081673afa8d91}{random\+Binary}} ()
+\begin{DoxyCompactList}\small\item\em Generates a random binary digit (0 or 1). \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{utils_8cpp_a51fe6d6654dbf9d7cbfcbdf266921ec5}{add\+Zeros}} (string s)
+\begin{DoxyCompactList}\small\item\em Adds leading zeros to a string to make its length 8. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{utils_8cpp_a24fdcf507cdc17369ff493ff7d9f7408}{to\+Binary}} (int decimal)
+\begin{DoxyCompactList}\small\item\em Converts a decimal number to its binary representation as a string. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{utils_8cpp_a9f0e8c87b7156ffd157b1ba174b43e71}{convert\+Text}} (string text)
+\begin{DoxyCompactList}\small\item\em Converts a text string to its binary representation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8cpp_a84463c9750c4f1a309ceb49651faa23f}{binary\+To\+Decimal}} (const std\+::string \&binary)
+\begin{DoxyCompactList}\small\item\em Converts a binary string to its decimal representation. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{utils_8cpp_af49597efc67d91bdf5f0d510c7d86740}{convert\+Extract\+Text}} (string extracted\+Text)
+\begin{DoxyCompactList}\small\item\em Converts a binary string representing text back to its original text form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utils_8cpp_a51fe6d6654dbf9d7cbfcbdf266921ec5}\label{utils_8cpp_a51fe6d6654dbf9d7cbfcbdf266921ec5}} 
+\index{utils.cpp@{utils.cpp}!addZeros@{addZeros}}
+\index{addZeros@{addZeros}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{addZeros()}{addZeros()}}
+{\footnotesize\ttfamily string add\+Zeros (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+
+
+Adds leading zeros to a string to make its length 8. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The input string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string The input string with leading zeros added to make its length 8. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8cpp_a51fe6d6654dbf9d7cbfcbdf266921ec5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8cpp_a84463c9750c4f1a309ceb49651faa23f}\label{utils_8cpp_a84463c9750c4f1a309ceb49651faa23f}} 
+\index{utils.cpp@{utils.cpp}!binaryToDecimal@{binaryToDecimal}}
+\index{binaryToDecimal@{binaryToDecimal}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{binaryToDecimal()}{binaryToDecimal()}}
+{\footnotesize\ttfamily int binary\+To\+Decimal (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{binary }\end{DoxyParamCaption})}
+
+
+
+Converts a binary string to its decimal representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em binary} & The binary string to be converted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The decimal representation of the binary string. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & If the binary string contains characters other than \textquotesingle{}0\textquotesingle{} or \textquotesingle{}1\textquotesingle{}. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8cpp_a84463c9750c4f1a309ceb49651faa23f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8cpp_af49597efc67d91bdf5f0d510c7d86740}\label{utils_8cpp_af49597efc67d91bdf5f0d510c7d86740}} 
+\index{utils.cpp@{utils.cpp}!convertExtractText@{convertExtractText}}
+\index{convertExtractText@{convertExtractText}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{convertExtractText()}{convertExtractText()}}
+{\footnotesize\ttfamily string convert\+Extract\+Text (\begin{DoxyParamCaption}\item[{string}]{extracted\+Text }\end{DoxyParamCaption})}
+
+
+
+Converts a binary string representing text back to its original text form. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em extracted\+Text} & The binary string representing the text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string The original text. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{utils_8cpp_af49597efc67d91bdf5f0d510c7d86740_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8cpp_af49597efc67d91bdf5f0d510c7d86740_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8cpp_a9f0e8c87b7156ffd157b1ba174b43e71}\label{utils_8cpp_a9f0e8c87b7156ffd157b1ba174b43e71}} 
+\index{utils.cpp@{utils.cpp}!convertText@{convertText}}
+\index{convertText@{convertText}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{convertText()}{convertText()}}
+{\footnotesize\ttfamily string convert\+Text (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Converts a text string to its binary representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The text string to be converted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string The binary representation of the text string. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & If the text contains unsupported characters. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{utils_8cpp_a9f0e8c87b7156ffd157b1ba174b43e71_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{utils_8cpp_a9f0e8c87b7156ffd157b1ba174b43e71_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8cpp_a3b4cfbbb69f94867a7c081673afa8d91}\label{utils_8cpp_a3b4cfbbb69f94867a7c081673afa8d91}} 
+\index{utils.cpp@{utils.cpp}!randomBinary@{randomBinary}}
+\index{randomBinary@{randomBinary}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{randomBinary()}{randomBinary()}}
+{\footnotesize\ttfamily int random\+Binary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates a random binary digit (0 or 1). 
+
+\begin{DoxyReturn}{Returns}
+int Random binary digit (0 or 1). 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8cpp_a3b4cfbbb69f94867a7c081673afa8d91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8cpp_a24fdcf507cdc17369ff493ff7d9f7408}\label{utils_8cpp_a24fdcf507cdc17369ff493ff7d9f7408}} 
+\index{utils.cpp@{utils.cpp}!toBinary@{toBinary}}
+\index{toBinary@{toBinary}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{toBinary()}{toBinary()}}
+{\footnotesize\ttfamily string to\+Binary (\begin{DoxyParamCaption}\item[{int}]{decimal }\end{DoxyParamCaption})}
+
+
+
+Converts a decimal number to its binary representation as a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em decimal} & The decimal number to be converted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string The binary representation of the decimal number. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & If the decimal number is negative. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8cpp_a24fdcf507cdc17369ff493ff7d9f7408_icgraph}
+\end{center}
+\end{figure}

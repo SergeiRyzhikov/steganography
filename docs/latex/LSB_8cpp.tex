@@ -1,0 +1,96 @@
+\hypertarget{LSB_8cpp}{}\doxysection{LSB.\+cpp File Reference}
+\label{LSB_8cpp}\index{LSB.cpp@{LSB.cpp}}
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+Include dependency graph for LSB.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LSB_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{LSB_8cpp_a79066aadf4f9c835329e337f9ef81b24}{LSB\+\_\+extract}} (string path)
+\begin{DoxyCompactList}\small\item\em Extracts embedded text from an image using the LSB steganography method. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{LSB_8cpp_afb99815a51961099bccf92786fa5c7f7}{LSB\+\_\+embed}} (string image\+Path, string text, string image\+Name)
+\begin{DoxyCompactList}\small\item\em Embeds text into an image using the LSB steganography method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{LSB_8cpp_afb99815a51961099bccf92786fa5c7f7}\label{LSB_8cpp_afb99815a51961099bccf92786fa5c7f7}} 
+\index{LSB.cpp@{LSB.cpp}!LSB\_embed@{LSB\_embed}}
+\index{LSB\_embed@{LSB\_embed}!LSB.cpp@{LSB.cpp}}
+\doxysubsubsection{\texorpdfstring{LSB\_embed()}{LSB\_embed()}}
+{\footnotesize\ttfamily int LSB\+\_\+embed (\begin{DoxyParamCaption}\item[{string}]{image\+Path,  }\item[{string}]{text,  }\item[{string}]{image\+Name }\end{DoxyParamCaption})}
+
+
+
+Embeds text into an image using the LSB steganography method. 
+
+This function takes an image path, text to embed, and an output image name. It converts the text to binary and embeds it into the least significant bit (LSB) of the blue channel of the image pixels.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Path} & Path to the input image file. \\
+\hline
+{\em text} & Text to embed into the image. \\
+\hline
+{\em image\+Name} & Name of the output image file with embedded text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 on success, -\/1 if the image cannot be loaded. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LSB_8cpp_afb99815a51961099bccf92786fa5c7f7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{LSB_8cpp_afb99815a51961099bccf92786fa5c7f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{LSB_8cpp_a79066aadf4f9c835329e337f9ef81b24}\label{LSB_8cpp_a79066aadf4f9c835329e337f9ef81b24}} 
+\index{LSB.cpp@{LSB.cpp}!LSB\_extract@{LSB\_extract}}
+\index{LSB\_extract@{LSB\_extract}!LSB.cpp@{LSB.cpp}}
+\doxysubsubsection{\texorpdfstring{LSB\_extract()}{LSB\_extract()}}
+{\footnotesize\ttfamily int LSB\+\_\+extract (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Extracts embedded text from an image using the LSB steganography method. 
+
+This function takes the path to an image file with embedded text. It reads the least significant bit (LSB) of the blue channel of each pixel and converts the extracted binary data back to text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the image file with embedded text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 on success, -\/1 if the image cannot be loaded. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LSB_8cpp_a79066aadf4f9c835329e337f9ef81b24_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{LSB_8cpp_a79066aadf4f9c835329e337f9ef81b24_icgraph}
+\end{center}
+\end{figure}

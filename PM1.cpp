@@ -7,10 +7,21 @@
 using namespace std;
 
 /**
- * @brief Embeds text into an image using the PM1 steganography method.
+ * @brief Embeds text into an image using the Plus-Minus One (PM1) method.
  * 
  * This function takes an image path, text to embed, and an output image name.
- * It converts the text to binary and embeds it into the blue channel of the image pixels.
+ * It converts the text to binary and embeds it into the blue channel of the image pixels
+ * using the PM1 method. The embedding process can be described by the formula:
+ * 
+ * \f[
+ * P_i' = \begin{cases} 
+ * P_i \pm 1, & \text{if } P_i \mod 2 \neq m_i \\
+ * P_i, & \text{otherwise}
+ * \end{cases}
+ * \f]
+ * 
+ * where \( P_i \) is the pixel value before embedding, \( P_i' \) is the pixel value after embedding,
+ * and \( m_i \) is the bit of the message.
  * 
  * @param imagePath Path to the input image file.
  * @param text Text to embed into the image.
