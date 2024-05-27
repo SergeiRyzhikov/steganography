@@ -15,3 +15,9 @@ target_link_libraries(MyTests ${OpenCV_LIBS})
 
 # Ссылка на библиотеку doctest
 target_include_directories(MyTests PRIVATE doctest)
+
+# Включить поддержку тестирования и CTest
+enable_testing()
+
+# Зарегистрировать MyTests в CTest
+add_test(NAME MyTests COMMAND MyTests)
