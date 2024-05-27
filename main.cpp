@@ -7,8 +7,12 @@
 using namespace std;
 
 /**
- * @brief Converts a binary string representing text back to its original text form.
+ * @brief Main function to drive the steganography program.
  * 
+ * This function allows the user to select a steganography method and either embed text into
+ * an image or extract text from an image using the chosen method.
+ * 
+ * @return int Returns 0 on successful execution.
  */
 int main() {
     string method, choice, path, name, text;

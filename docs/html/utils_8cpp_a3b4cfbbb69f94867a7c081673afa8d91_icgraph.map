@@ -1,0 +1,5 @@
+<map id="randomBinary" name="randomBinary">
+<area shape="rect" id="node1" title="Generates a random binary digit (0 or 1)." alt="" coords="259,5,373,32"/>
+<area shape="rect" id="node2" href="$PM1_8cpp.html#ab82e5352149b1e58816573d7311ced94" title="Embeds text into an image using the PM1 steganography method." alt="" coords="108,5,211,32"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function to drive the steganography program." alt="" coords="5,5,60,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="QIM_embed" name="QIM_embed">
+<area shape="rect" id="node1" title="Embeds text into an image using the Quantization Index Modulation (QIM) method." alt="" coords="5,31,105,57"/>
+<area shape="rect" id="node2" href="$utils_8cpp.html#a9f0e8c87b7156ffd157b1ba174b43e71" title="Converts a text string to its binary representation." alt="" coords="153,31,252,57"/>
+<area shape="rect" id="node3" href="$utils_8cpp.html#a51fe6d6654dbf9d7cbfcbdf266921ec5" title="Adds leading zeros to a string to make its length 8." alt="" coords="300,5,383,32"/>
+<area shape="rect" id="node4" href="$utils_8cpp.html#a24fdcf507cdc17369ff493ff7d9f7408" title="Converts a decimal number to its binary representation as a string." alt="" coords="303,56,380,83"/>
+</map>

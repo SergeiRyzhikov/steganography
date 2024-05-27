@@ -2,7 +2,7 @@
 
 PROJECT_NAME           = "steganography"
 OUTPUT_DIRECTORY       = ./docs
-INPUT                  = utils.cpp
+INPUT                  = utils.cpp main.cpp PM1.cpp LSB.cpp QIM.cpp
 RECURSIVE              = YES
 FILE_PATTERNS          = *.cpp *.h
 GENERATE_HTML          = YES

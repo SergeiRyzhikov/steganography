@@ -6,6 +6,17 @@
 
 using namespace std;
 
+/**
+ * @brief Embeds text into an image using the PM1 steganography method.
+ * 
+ * This function takes an image path, text to embed, and an output image name.
+ * It converts the text to binary and embeds it into the blue channel of the image pixels.
+ * 
+ * @param imagePath Path to the input image file.
+ * @param text Text to embed into the image.
+ * @param imageName Name of the output image file with embedded text.
+ * @return int Returns 0 on success, -1 if the image cannot be loaded.
+ */
 int PM1_embed(string imagePath, string text, string imageName) {
     string binaryText = convertText(text);
     
@@ -52,6 +63,15 @@ int PM1_embed(string imagePath, string text, string imageName) {
     return 0;
 }
 
+/**
+ * @brief Extracts embedded text from an image using the PM1 steganography method.
+ * 
+ * This function takes the path to an image file with embedded text. It reads the blue channel
+ * of the image pixels and converts the extracted binary data back to text.
+ * 
+ * @param path Path to the image file with embedded text.
+ * @return int Returns 0 on success, -1 if the image cannot be loaded.
+ */
 int PM1_extract(string path) {
     
     cv::Mat image = cv::imread(path);
