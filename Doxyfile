@@ -1,6 +1,6 @@
 # Doxyfile 1.9.1
 
-PROJECT_NAME           = "steganography"
+PROJECT_NAME           = "Steganography"
 OUTPUT_DIRECTORY       = ./docs
 INPUT                  = utils.cpp main.cpp PM1.cpp LSB.cpp QIM.cpp
 RECURSIVE              = YES

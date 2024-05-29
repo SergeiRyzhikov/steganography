@@ -10,7 +10,7 @@ std::string convertText(std::string text);
 
 std::string toBinary(int decimal);
 
-int binaryToDecimal(const std::string& binary);
+int binaryToDecimal(const std::string &binary);
 
 std::string convertExtractText(std::string extractedText);
 

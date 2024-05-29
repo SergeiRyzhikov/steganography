@@ -9,17 +9,17 @@ using namespace std;
 /**
  * @file main.cpp
  * @brief Main entry point for the steganography program.
- * 
+ *
  * This file contains the main function which allows the user to choose between different
  * steganography methods (PM1, QIM, LSB) and perform embedding or extraction of text in/from images.
  */
 
 /**
  * @brief Main function to drive the steganography program.
- * 
+ *
  * This function allows the user to select a steganography method and either embed text into
  * an image or extract text from an image using the chosen method.
- * 
+ *
  * The following methods are supported:
  * - **LSB (Least Significant Bit)**:
  *   \f[
@@ -28,8 +28,8 @@ using namespace std;
  *   \f]
  * - **PM1 (Plus-Minus One)**:
  *   \f[
- *   P_i' = 
- *   \begin{cases} 
+ *   P_i' =
+ *   \begin{cases}
  *   P_i \pm 1 \cdot r, & \text{if } P_i \mod 2 \neq m_i; \\
  *   P_i, & \text{otherwise},
  *   \end{cases}
@@ -38,41 +38,47 @@ using namespace std;
  *   \f[
  *   P_i' = q \cdot \left\lfloor \frac{P_i}{q} \right\rfloor + \frac{q}{2} \cdot m_i
  *   \f]
- * 
+ *
  * @return int Returns 0 on successful execution.
  */
-int main() {
+int main()
+{
     string method, choice, path, name, text;
     cout << "Выберите стегонаграфический метод (PM1, QIM, LSB): " << endl;
     cin >> method;
     cout << "" << endl;
-
     cout << "Выберите встраивание или извлечение: " << endl;
     cin >> choice;
     cout << "" << endl;
 
-    if (choice == "извлечение"){
+    if (choice == "извлечение")
+    {
         cout << "Введите путь до изображения: " << endl;
         cin >> path;
         cout << "" << endl;
 
-        if (method == "QIM"){
+        if (method == "QIM")
+        {
             QIM_extract(path);
         }
-        else if (method == "LSB"){
+        else if (method == "LSB")
+        {
             LSB_extract(path);
         }
-        else if (method == "PM1"){
+        else if (method == "PM1")
+        {
             PM1_extract(path);
         }
-        else {
+        else
+        {
             cout << "Метод введен неверно :(" << endl;
         }
     }
 
-    else if (choice == "встраивание"){
+    else if (choice == "встраивание")
+    {
         cout << "Введите путь до изображения: " << endl;
-        cin  >> path;
+        cin >> path;
         cout << "" << endl;
 
         cout << "Введите название стегоизображения: " << endl;
@@ -84,21 +90,26 @@ int main() {
         getline(cin, text);
         cout << "" << endl;
 
-        if (method == "QIM"){
+        if (method == "QIM")
+        {
             QIM_embed(path, text, name);
         }
-        else if (method == "LSB"){
+        else if (method == "LSB")
+        {
             LSB_embed(path, text, name);
         }
-        else if (method == "PM1"){
+        else if (method == "PM1")
+        {
             PM1_embed(path, text, name);
         }
-        else {
+        else
+        {
             cout << "Метод введен неверно :(" << endl;
         }
     }
 
-    else {
+    else
+    {
         cout << "Некорректно введенные данные :(" << endl;
     }
 

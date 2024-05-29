@@ -1,10 +1,10 @@
-Start testing: May 27 12:38 MSK
+Start testing: May 29 10:55 MSK
 ----------------------------------------------------------
 1/1 Testing: MyTests
 1/1 Test: MyTests
 Command: "/home/ryzhikov/source/project_steg/build/MyTests"
 Directory: /home/ryzhikov/source/project_steg/build
-"MyTests" start time: May 27 12:38 MSK
+"MyTests" start time: May 29 10:55 MSK
 Output:
 ----------------------------------------------------------
 [doctest] doctest version is "2.4.11"
@@ -29,11 +29,11 @@ Output:
 [doctest] assertions: 68 | 68 passed | 0 failed |
 [doctest] Status: SUCCESS!
 <end of output>
-Test time =   0.26 sec
+Test time =   0.21 sec
 ----------------------------------------------------------
 Test Passed.
-"MyTests" end time: May 27 12:38 MSK
+"MyTests" end time: May 29 10:55 MSK
 "MyTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 27 12:38 MSK
+End testing: May 29 10:55 MSK

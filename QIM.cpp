@@ -44,7 +44,6 @@ int QIM_embed(string imagePath, string text, string imageName) {
         cout << "Невозможно загрузить изображение. Проверьте путь к файлу." << endl;
         return -1;
     }
-    // Получаем размеры изображения
     int rows = image.rows;
     int cols = image.cols;
     int rounds = 0;
@@ -68,7 +67,6 @@ int QIM_embed(string imagePath, string text, string imageName) {
             rounds +=1;
         }
     }
-    // Сохраняем измененное изображение
     cv::imwrite(imageName, image);
     cout << "\nВставка текста произошла успешно. Стегоизображение: " << imageName <<endl;
     return 0;
@@ -92,7 +90,6 @@ int QIM_extract(string path) {
         return -1;
     }
     
-    // Получаем размеры изображения
     int rows = image.rows;
     int cols = image.cols;
     string extractedText = "";

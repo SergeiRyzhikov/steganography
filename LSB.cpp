@@ -28,14 +28,12 @@ int LSB_extract(string path) {
         cout << "Невозможно загрузить изображение. Проверьте путь к файлу." << endl;
         return -1;
     }
-    // Получаем размеры изображения
     int rows = image.rows;
     int cols = image.cols;
     int rounds = 0;
     string extractedText = "";
     for (int y = 0; y < rows; ++y) {
         for (int x = 0; x < cols; ++x) {
-            // Получаем текущий пиксель
             cv::Vec3b pixel = image.at<cv::Vec3b>(y, x);
 
             string binaryPixel = toBinary(static_cast<int>(pixel[0]));
@@ -78,7 +76,6 @@ int LSB_embed(string imagePath, string text, string imageName) {
         cout << "Невозможно загрузить изображение. Проверьте путь к файлу." << endl;
         return -1;
     }
-    // Получаем размеры изображения
     int rows = image.rows;
     int cols = image.cols;
     int rounds = 0;
@@ -100,7 +97,6 @@ int LSB_embed(string imagePath, string text, string imageName) {
             rounds +=1;
         }
     }
-    // Сохраняем измененное изображение
     cv::imwrite(imageName, image);
     cout << "\nВставка текста произошла успешно. Стегоизображение: " << imageName <<endl;
     return 0;
