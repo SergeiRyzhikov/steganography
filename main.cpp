@@ -50,67 +50,80 @@ int main()
     cout << "Выберите встраивание или извлечение: " << endl;
     cin >> choice;
     cout << "" << endl;
-
-    if (choice == "извлечение")
+    try
     {
-        cout << "Введите путь до изображения: " << endl;
-        cin >> path;
-        cout << "" << endl;
+        if (choice == "извлечение")
+        {
+            cout << "Введите путь до изображения: " << endl;
+            cin >> path;
+            cout << "" << endl;
 
-        if (method == "QIM")
-        {
-            QIM_extract(path);
+            if (method == "QIM")
+            {
+                QIM_extract(path);
+            }
+            else if (method == "LSB")
+            {
+                LSB_extract(path);
+            }
+            else if (method == "PM1")
+            {
+                PM1_extract(path);
+            }
+            else
+            {
+                cout << "Метод введен неверно :(" << endl;
+            }
         }
-        else if (method == "LSB")
+
+        else if (choice == "встраивание")
         {
-            LSB_extract(path);
+            cout << "Введите путь до изображения: " << endl;
+            cin >> path;
+            cout << "" << endl;
+
+            cout << "Введите название стегоизображения: " << endl;
+            cin >> name;
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "" << endl;
+
+            if ((name.find(".png") == -1 && name.find(".jpg") == -1))
+            {
+                cout << "Некорректно введенное название стегоизображенияф" << endl;
+                return -1;
+            }
+
+            cout << "Введите текст: " << endl;
+            getline(cin, text);
+            cout << "" << endl;
+
+            if (method == "QIM")
+            {
+                QIM_embed(path, text, name);
+            }
+            else if (method == "LSB")
+            {
+                LSB_embed(path, text, name);
+            }
+            else if (method == "PM1")
+            {
+                PM1_embed(path, text, name);
+            }
+            else
+            {
+                cout << "Метод введен неверно :(" << endl;
+            }
         }
-        else if (method == "PM1")
-        {
-            PM1_extract(path);
-        }
+
         else
         {
-            cout << "Метод введен неверно :(" << endl;
+            cout << "Некорректно введенные данные :(" << endl;
         }
     }
 
-    else if (choice == "встраивание")
+    catch (const std::invalid_argument &e)
     {
-        cout << "Введите путь до изображения: " << endl;
-        cin >> path;
-        cout << "" << endl;
-
-        cout << "Введите название стегоизображения: " << endl;
-        cin >> name;
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "" << endl;
-
-        cout << "Введите текст: " << endl;
-        getline(cin, text);
-        cout << "" << endl;
-
-        if (method == "QIM")
-        {
-            QIM_embed(path, text, name);
-        }
-        else if (method == "LSB")
-        {
-            LSB_embed(path, text, name);
-        }
-        else if (method == "PM1")
-        {
-            PM1_embed(path, text, name);
-        }
-        else
-        {
-            cout << "Метод введен неверно :(" << endl;
-        }
-    }
-
-    else
-    {
-        cout << "Некорректно введенные данные :(" << endl;
+        std::cout << e.what() << std::endl;
     }
 
     return 0;
