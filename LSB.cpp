@@ -73,9 +73,8 @@ int LSB_extract(string path)
  */
 int LSB_embed(string imagePath, string text, string imageName)
 {
-    
-    string binaryText = convertText(text);
 
+    string binaryText = convertText(text);
 
     cv::Mat image = cv::imread(imagePath);
 

@@ -124,7 +124,7 @@ int binaryToDecimal(const std::string &binary)
  * @param extractedText The binary string representing the text.
  * @return std::string The original text.
  */
-string convertExtractText(string extractedText)
+string convertExtractText(const std::string &extractedText)
 {
     string text;
     for (int i = 0; i < extractedText.length(); i += 8)
